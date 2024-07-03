@@ -34,7 +34,7 @@ export const H1 = styled.h1`
   font-size: 72px;
   font-weight: 300;
   line-height: 0px;
-  color: #619894;
+  color: var(--hero-h1-color);
 `;
 
 export const H2 = styled.h2`
@@ -45,7 +45,7 @@ export const H2 = styled.h2`
 `;
 
 export const ColorSpan = styled.span`
-  color: #619894;
+  color: var(--hero-h1-color);
 `;
 
 export const TypographyBigThin = styled.h4`
@@ -69,6 +69,7 @@ export const BtnText = styled.button`
   align-items: center;
   margin-bottom: 10px;
   margin-left: 10px;
+
 
   a {
     text-decoration: none;
@@ -95,6 +96,6 @@ export const BtnPrimaryBig = styled.button`
   justify-content: center;
   border: solid 1px;
   margin-right: 10px;
-  background-color: black;
+  background-color: var(--btn-background-color);
   border-color: white;
 `;

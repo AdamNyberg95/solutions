@@ -82,7 +82,7 @@ export const BtnPrimary = styled.button`
   align-items: center;
   justify-content: center;
   border: solid 1px;
-  background-color: black;
+  background-color: var(--btn-background-color);
   border-color: white;
 `;
 
