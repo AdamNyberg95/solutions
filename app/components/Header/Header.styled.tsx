@@ -33,8 +33,8 @@ export const Wrapper = styled.nav<ScrollProps>`
   transition: all 0.3s ease-out;
   background: ${({ isScrolled }) =>
     isScrolled
-      ? 'var(--header-color-light-yellow)'
-      : 'var(--header-color-light-yellow)'};
+      ? 'var(--header-color-light-beigeWhite)'
+      : 'var(--header-color-light-beigeWhite)'};
 `;
 
 export const NavList = styled.ul`
@@ -74,7 +74,7 @@ export const NavLinks = styled.li`
 `;
 
 export const BtnPrimary = styled.button`
-  width: 135px;
+  width: 145px;
   height: 45px;
   border-radius: 30px;
   display: flex;
@@ -86,7 +86,9 @@ export const BtnPrimary = styled.button`
   border-color: white;
 `;
 
-export const BtnPrimarySmall = styled.button`
+// har kvar in case of lägger till boka möte knapp i nav
+
+/*export const BtnPrimarySmall = styled.button`
   width: 112px;
   height: 38px;
   border-radius: 20px;
@@ -103,4 +105,4 @@ export const BtnPrimarySmall = styled.button`
 export const BtnSmallTypography = styled.p`
   font-size: 12px;
   color: white;
-`;
+`;*/

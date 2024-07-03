@@ -55,11 +55,11 @@ export const Hero: React.FC = () => {
         </BtnText>
         <BtnWrapper>
           <BtnPrimaryBig>
-            <BtnTypography>Boka möte med oss</BtnTypography>
+            <BtnTypography>Kontakta oss</BtnTypography>
             <IoIosArrowRoundForward size={23} color="white" />
           </BtnPrimaryBig>
           <BtnPrimary>
-            <BtnTypography>Kontakta oss</BtnTypography>
+            <BtnTypography>Våra tjänster</BtnTypography>
             <IoIosArrowRoundForward size={23} color="white" />
           </BtnPrimary>
         </BtnWrapper>

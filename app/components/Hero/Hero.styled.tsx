@@ -12,11 +12,11 @@ export const Container = styled.header`
   background: url(${WiStarsDataURL}) repeat,
     linear-gradient(
       to bottom,
-      var(--header-color-light-yellow) 0%,
-      var(--header-color-light-orange) 25%,
+      var(--header-color-light-beigeWhite) 0%,
+      var(--header-color-light-beige) 25%,
       var(--header-color) 50%,
       var(--header-color-shade) 75%,
-      var(--header-color-light-yellow) 100%
+      var(--header-color-light-beige) 100%
     );
 `;
 
@@ -86,7 +86,7 @@ export const BtnTypography = styled.p`
 `;
 
 export const BtnPrimaryBig = styled.button`
-  width: 195px;
+  width: 175px;
   height: 45px;
   border-radius: 30px;
   display: flex;

@@ -3,14 +3,18 @@
   --text-color: #222222;
   --header-color: #e6e6e6;
   --header-color-shade: #a8c9c6;
-  --header-color-light-yellow: #f5f5dc;
-  --header-color-light-orange: #ffeedb;
+  --header-color-light-beigeWhite: #fbf6f2;
+  --header-color-light-beige: #F9F2EB;
+  --icon-color: #f0f0f0
 }
 
 [data-theme='dark'] {
   --background-color: #000;
   --text-color: #fff;
-  --header-color: yellow;
+  --header-color: #222222;
+  --header-color-shade: #585555;
+  --header-color-light-beigeWhite: #222222;
+  --header-color-light-beige: #585555;
 }
 
 body {

@@ -2,8 +2,6 @@
 
 import React, { useEffect, useState } from 'react';
 import {
-  BtnPrimarySmall,
-  BtnSmallTypography,
   Container,
   Logga,
   LoggoNavWrapper,
@@ -13,10 +11,9 @@ import {
 } from './Header.styled';
 import logga2 from '../../assets/icons/logga1.png';
 import Image from 'next/image';
-import { IoIosArrowRoundForward } from 'react-icons/io';
 import Link from 'next/link';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
-import { motion, useAnimation } from 'framer-motion';
+import { useAnimation } from 'framer-motion';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -61,10 +58,6 @@ export const Header: React.FC = () => {
               </NavLinks>
             ))}
           </LoggoNavWrapper>
-          <BtnPrimarySmall>
-            <BtnSmallTypography>Boka möte </BtnSmallTypography>{' '}
-            <IoIosArrowRoundForward size={23} color="white" />
-          </BtnPrimarySmall>
           <ThemeToggle />
         </NavList>
       </Wrapper>
