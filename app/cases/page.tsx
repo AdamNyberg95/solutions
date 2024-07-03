@@ -1,10 +1,13 @@
 'use client';
 
 import React from 'react';
+import { StyledSection } from './page.styled';
 
 const About: React.FC = () => {
   return (
-    <section>AS solutions är en digital byrå i Stockholm och på Åland</section>
+    <StyledSection>
+      <h1>AS solutions cases</h1>
+    </StyledSection>
   );
 };
 

@@ -16,9 +16,12 @@ import Image from 'next/image';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import Link from 'next/link';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
+import { motion, useAnimation } from 'framer-motion';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const controls = useAnimation();
 
   const links = [
     { display: 'Våra tjänster', path: 'vara-tjanster' },
@@ -35,6 +38,10 @@ export const Header: React.FC = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  useEffect(() => {
+    controls.start({ opacity: isScrolled ? 1 : 0, y: isScrolled ? 0 : -50 });
+  }, [isScrolled, controls]);
 
   return (
     <Container>
