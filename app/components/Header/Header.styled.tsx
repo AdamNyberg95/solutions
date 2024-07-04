@@ -86,11 +86,10 @@ export const BtnPrimary = styled.button`
   border-color: white;
 `;
 
-// har kvar in case of lägger till boka möte knapp i nav
 
-/*export const BtnPrimarySmall = styled.button`
-  width: 112px;
-  height: 38px;
+export const BtnPrimarySmall = styled.button`
+  width: 132px;
+  height: 36px;
   border-radius: 20px;
   padding: 5px 5px;
   display: flex;
@@ -105,4 +104,4 @@ export const BtnPrimary = styled.button`
 export const BtnSmallTypography = styled.p`
   font-size: 12px;
   color: white;
-`;*/
+`;
