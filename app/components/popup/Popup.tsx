@@ -16,13 +16,11 @@ export const Popup = ({ togglePopup }: Popup) => {
             <PopupCard>
                 <ClickButton onClick={togglePopup}><IoIosClose size={30} />
                 </ClickButton>
-
                 <TextWrapper>
-                    <TypographySmall>Få en digital lösning till <ColorSpan>20%</ColorSpan> av marknadspris.</TypographySmall>
+                    <TypographySmall>Få en digital lösning till <ColorSpan>20%</ColorSpan> av marknadspris</TypographySmall>
                     <TypographySmallThin style={{ marginTop: '-10px' }}> Våra fem första kunder får kanon erbjudandet. Hör av dig nu!</TypographySmallThin>
                     <BtnPrimarySmall> <BtnSmallTypography>Kontakta oss </BtnSmallTypography></BtnPrimarySmall>
                 </TextWrapper>
-
             </PopupCard>
         </Overlay>
     </>
