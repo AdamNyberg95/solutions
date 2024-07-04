@@ -84,6 +84,7 @@ export const BtnPrimary = styled.button`
   border: solid 1px;
   background-color: var(--btn-background-color);
   border-color: white;
+  cursor: pointer;
 `;
 
 
@@ -99,6 +100,7 @@ export const BtnPrimarySmall = styled.button`
   border: solid 1px;
   background-color: black;
   border-color: white;
+  cursor: pointer;
 `;
 
 export const BtnSmallTypography = styled.p`

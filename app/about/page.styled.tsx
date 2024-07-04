@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Image from 'next/image';
 
 export const StyledSection = styled.section`
   max-width: 1200px;
@@ -10,11 +11,14 @@ export const StyledSection = styled.section`
 export const Card = styled.div`
 display: flex;
 flex-direction: row;
-margin: 20px 20px;
+padding: 50px 50px;
 `;
 
 export const CardWrapper = styled.div`
-padding: 60px 60px;
+display: flex; 
+justify-content: center;
+align-items: center;
+flex-direction: column;
 `;
 
 export const TextWrapper = styled.div`
@@ -39,7 +43,7 @@ flex-direction: row;
 
 export const Border = styled.div`
 border-bottom: 1px solid;
-border-color: grey;
+border-color: var(--beige-color);
 width: 700px;
 `;
 
@@ -66,4 +70,10 @@ display: flex;
 justify-content: center;
 align-items: center;
 margin-right: 5px;
+`;
+
+export const StyledImage = styled(Image)`
+width: 350px; 
+height: 420px;
+border-radius: 6px;
 `;

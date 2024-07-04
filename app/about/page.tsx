@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import { Border, Card, CardTitle, CardWrapper, StyledSection, TextWrapper, Title2, UnderTitle, Text, CompetenceWrapper, CompetenceBorder, TextWithBtnWrapper } from './page.styled';
+import { Border, Card, CardTitle, CardWrapper, StyledSection, TextWrapper, Title2, UnderTitle, Text, CompetenceWrapper, CompetenceBorder, TextWithBtnWrapper, StyledImage } from './page.styled';
 import { TitleWrapper } from '../components/About/About.styled';
 import { H2, TypographyBigThin } from '../components/Hero/Hero.styled';
 import saraImg from '../../../solutions/app/assets/images/Sara-2.jpg';
@@ -25,10 +25,10 @@ const About: React.FC = () => {
 
       <CardWrapper>
         <Card>
-          <Image src={saraImg} alt={'profileImg'} width={350} height={400}></Image>
+          <StyledImage src={saraImg} alt={'profileImg'} width={350} height={400}></StyledImage>
           <TextWrapper>
             <CardTitle>Adam Nyberg</CardTitle>
-            <UnderTitle>Programmerat since, XX</UnderTitle>
+            <UnderTitle>Coding since, XX</UnderTitle>
             <Border />
             <Title2>Om Adam</Title2>
             <Text></Text>
@@ -45,11 +45,10 @@ const About: React.FC = () => {
         </Card>
 
         <Card>
-          <Image src={saraImg} alt={'profileImg'} width={350} height={420}></Image>
-
+      
           <TextWrapper>
             <CardTitle>Sara Södergård</CardTitle>
-            <UnderTitle>Programmerat since, februari 2022</UnderTitle>
+            <UnderTitle>Coding since, februari 2022</UnderTitle>
             <Border />
             <Title2>Om Sara</Title2>
             <Text dangerouslySetInnerHTML={{ __html: textSara }} />
@@ -69,6 +68,8 @@ const About: React.FC = () => {
               ))}
             </CompetenceWrapper>
           </TextWrapper>
+          <StyledImage src={saraImg} alt={'profileImg'} width={350} height={420}></StyledImage>
+
         </Card>
       </CardWrapper>
 

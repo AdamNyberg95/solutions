@@ -1,9 +1,8 @@
 'use client';
 
 import React from 'react';
-import { Card, CardBtnWrapper, CardTextWrapper, CardWrapper, StyledSection, TitleWrapper, BtnWrapper } from './About.styled';
+import { Card, CardBtnWrapper, CardTextWrapper, CardWrapper, StyledSection, TitleWrapper, BtnWrapper, StyledLink, TextName, TextRolle, StyledImage } from './About.styled';
 import { BtnTypography, H2, TypographyBigThin } from '../Hero/Hero.styled';
-import Image from 'next/image';
 import saraImg from '../../../../../image/Sara-2.jpg';
 import { BtnPrimaryBig } from '../Hero/Hero.styled';
 import { IoIosArrowRoundForward } from 'react-icons/io';
@@ -22,22 +21,29 @@ export const About: React.FC = () => {
         <CardBtnWrapper>
           <CardWrapper>
             <Card>
-              <Image src={saraImg} alt="profile-img" width={300} height={300} ></Image>
+              <StyledImage src={saraImg} alt="profile-img" ></StyledImage>
               <CardTextWrapper>
-                <text >Sara Södergård<br></br>Frontend utvecklare</text>
+                <TextName >Sara Södergård</TextName>
+                <TextRolle>
+                  Frontend utvecklare
+                </TextRolle>
               </CardTextWrapper>
             </Card>
             <Card>
-              <Image src={saraImg} alt="profile-img" width={300} height={300} ></Image>
+              <StyledImage src={saraImg} alt="profile-img" ></StyledImage>
               <CardTextWrapper>
-                <text>Adam Nyberg<br></br>Frontend utvecklare</text>
+                <TextName>Adam Nyberg</TextName>
+                <TextRolle>
+                  Frontend utvecklare
+                </TextRolle>
               </CardTextWrapper>
             </Card>
           </CardWrapper>
           <BtnWrapper>
-            <BtnPrimaryBig><BtnTypography>Läs mer om oss</BtnTypography>
-              <IoIosArrowRoundForward size={23} color="white" />
-            </BtnPrimaryBig>
+            <StyledLink href={`/about`}>
+              <BtnPrimaryBig> <BtnTypography>Läs mer om oss</BtnTypography>
+                <IoIosArrowRoundForward size={23} color="white" />
+              </BtnPrimaryBig> </StyledLink>
           </BtnWrapper>
 
         </CardBtnWrapper>

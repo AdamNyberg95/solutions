@@ -1,4 +1,8 @@
 import styled from 'styled-components';
+import Link from 'next/link';
+import Image from 'next/image';
+
+
 
 export const StyledSection = styled.section`
   max-width: 1200px;
@@ -25,9 +29,30 @@ max-width: 550px;
 margin: 20px 20px;
 `;
 
+export const StyledImage = styled(Image)`
+width: 300px;
+height: 300px;
+border-radius: 6px;
+`;
+
 export const CardTextWrapper = styled.div`
 margin: 4px 4px;
 `;
+
+export const TextName = styled.p`
+font-size: 16px;
+margin-top: -2px;
+`;
+
+export const TextRolle = styled.p`
+font-size: 14px;
+font-weight: 200;
+margin-top: -12px;
+
+
+`;
+
+
 
 export const Text1Wrapper = styled.div`
 border-bottom: solid 1px;
@@ -45,5 +70,8 @@ align-items: center;
 
 export const BtnWrapper = styled.div`
 margin: 20px 20px;
+`;
 
+export const StyledLink = styled(Link)`
+text-decoration: none;
 `;

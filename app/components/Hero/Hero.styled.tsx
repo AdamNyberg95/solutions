@@ -98,4 +98,6 @@ export const BtnPrimaryBig = styled.button`
   margin-right: 10px;
   background-color: var(--btn-background-color);
   border-color: white;
+  cursor: pointer;
 `;
+
