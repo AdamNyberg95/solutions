@@ -15,8 +15,10 @@ import {
   Border,
   TypographySmall,
   EndTypographyWrapper,
+  TextAndIconWrapper,
+  StyledIcon,
 } from './Footer.styled';
-import { PiCopyrightThin } from 'react-icons/pi';
+
 
 export const Footer: React.FC = () => {
   return (
@@ -37,7 +39,7 @@ export const Footer: React.FC = () => {
                   }}
                 ></img>
                 <TextWrapper>
-                  <Typography>Sara@sasolutions.com</Typography>
+                  <Typography style={{marginBottom: '8px'}}>Sara@sasolutions.com</Typography>
                   <Typography style={{ fontWeight: '200' }}>
                     +46 763437347
                   </Typography>
@@ -52,7 +54,7 @@ export const Footer: React.FC = () => {
                   }}
                 ></img>
                 <TextWrapper>
-                  <Typography>Adam@sasolutions.com</Typography>
+                  <Typography style={{marginBottom: '8px'}}>Adam@sasolutions.com</Typography>
                   <Typography>+46 763437347</Typography>
                 </TextWrapper>
               </FooterCard>
@@ -65,11 +67,12 @@ export const Footer: React.FC = () => {
 
         <EndTypographyWrapper>
           <Border></Border>
-
+          <TextAndIconWrapper>
+          <StyledIcon size={15}/> 
           <TypographySmall>
-            {' '}
-            <PiCopyrightThin size={15} /> 2024 SA Solution AB{' '}
+          2024 SA Solutions
           </TypographySmall>
+          </TextAndIconWrapper>
         </EndTypographyWrapper>
       </Container>
     </>

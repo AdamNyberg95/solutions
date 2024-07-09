@@ -3,11 +3,9 @@
 import React from 'react';
 import { Border, Card, CardTitle, CardWrapper, StyledSection, TextWrapper, Title2, UnderTitle, Text, CompetenceWrapper, CompetenceBorder, TextWithBtnWrapper, StyledImage } from './page.styled';
 import { TitleWrapper } from '../components/About/About.styled';
-import { H2, TypographyBigThin } from '../components/Hero/Hero.styled';
+import { H2, StyledArrowIcon, TypographyBigThin } from '../components/Hero/Hero.styled';
 import saraImg from '../../../solutions/app/assets/images/Sara-2.jpg';
-import Image from 'next/image';
 import { BtnPrimarySmall, BtnSmallTypography } from '../components/Header/Header.styled';
-import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const About: React.FC = () => {
   const text = 'SA Solutions är ett nystartat web-solution bolag, vars syfte är att hjälpa individer med att skapa digitala lösningar för deras företag. Vår vision är att tillsammans med företag se till så deras digitala lösningar hänger med i dagens teknologi. SA Solutions är belägna i Stockholm och på Åland. <br></br> Vi som står bakom SA Solutions är två frontend utvecklare Sara och Adam,som båda är passionerad av att skapa den bästa weblösningen för ditt företag. Med vår tidigare efarenhet av frontend utveckling tror vi att vi kan hjälpa ditt företag att hålla sig i upto date med dagens tekonlogi.'
@@ -55,7 +53,7 @@ const About: React.FC = () => {
             <TextWithBtnWrapper>
               <Text> Kolla in min portfolio för att ta del av mina tidigare projekt </Text>
               <BtnPrimarySmall style={{ marginLeft: '10px' }}><BtnSmallTypography>Saras portfolio </BtnSmallTypography>
-                <IoIosArrowRoundForward size={23} color="white" />
+                <StyledArrowIcon size={23} />
               </BtnPrimarySmall>
             </TextWithBtnWrapper>
             <Border />

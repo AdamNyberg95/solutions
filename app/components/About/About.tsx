@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Card, CardBtnWrapper, CardTextWrapper, CardWrapper, StyledSection, TitleWrapper, BtnWrapper, StyledLink, TextName, TextRolle, StyledImage } from './About.styled';
-import { BtnTypography, H2, TypographyBigThin } from '../Hero/Hero.styled';
+import { BtnTypography, H2, StyledArrowIcon, TypographyBigThin } from '../Hero/Hero.styled';
 import saraImg from '../../../../../image/Sara-2.jpg';
 import { BtnPrimaryBig } from '../Hero/Hero.styled';
 import { IoIosArrowRoundForward } from 'react-icons/io';
@@ -42,7 +42,7 @@ export const About: React.FC = () => {
           <BtnWrapper>
             <StyledLink href={`/about`}>
               <BtnPrimaryBig> <BtnTypography>Läs mer om oss</BtnTypography>
-                <IoIosArrowRoundForward size={23} color="white" />
+                <StyledArrowIcon size={23}  />
               </BtnPrimaryBig> </StyledLink>
           </BtnWrapper>
 

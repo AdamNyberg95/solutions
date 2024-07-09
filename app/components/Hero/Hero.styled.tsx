@@ -1,7 +1,11 @@
 import { StarSvg } from '@/app/assets/icons/StarSvg';
+import {StarSvgDark} from '@/app/assets/icons/StarSvgDark';
 import styled from 'styled-components';
+import { IoIosArrowRoundForward } from 'react-icons/io';
+
 
 const WiStarsDataURL = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvg)}`;
+const WiStarDarkDataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvgDark)}`;
 
 export const Container = styled.header`
   height: 100vh;
@@ -18,6 +22,18 @@ export const Container = styled.header`
       var(--header-color-shade) 75%,
       var(--header-color-light-beige) 100%
     );
+
+    [data-theme='dark'] & {
+    background: url(${WiStarDarkDataUrl}) repeat,
+      linear-gradient(
+        to bottom,
+        var(--header-color-light-beigeWhite) 0%,
+        var(--header-color-light-beige) 25%,
+        var(--header-color) 50%,
+        var(--header-color-shade) 75%,
+        var(--header-color-light-beige) 100%
+      );
+  }
 `;
 
 export const TextBox = styled.div`
@@ -79,11 +95,14 @@ export const BtnText = styled.button`
 
 export const TypographySmall = styled.p`
   font-size: 18px;
+  color: var(--typography-color);
+  
 `;
+
 
 export const BtnTypography = styled.p`
   font-size: 16px;
-  color: white;
+  color: var(--btn-typography-color);
 `;
 
 export const BtnPrimaryBig = styled.button`
@@ -101,3 +120,11 @@ export const BtnPrimaryBig = styled.button`
   cursor: pointer;
 `;
 
+export const StyledArrowIcon = styled(IoIosArrowRoundForward)`
+color: var(--icon-color);
+
+`;
+
+export const StyledIconBtnText = styled(IoIosArrowRoundForward)`
+color: var(--text-color)
+`;

@@ -20,7 +20,7 @@ export const PopupCard = styled.div`
   margin-left: -150px;
 
 
-  background-color: var(--header-color-light-beigeWhite) ;
+  background-color: var(--popup-background-color) ;
   border-radius: 6px;
   padding: 20px;
   transform: translateY(-50%);

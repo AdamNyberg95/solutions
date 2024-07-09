@@ -98,12 +98,12 @@ export const BtnPrimarySmall = styled.button`
   align-items: center;
   justify-content: center;
   border: solid 1px;
-  background-color: black;
+  background-color: var(--btn-background-color);
   border-color: white;
   cursor: pointer;
 `;
 
 export const BtnSmallTypography = styled.p`
-  font-size: 12px;
-  color: white;
+  font-size: 14px;
+  color: var(--btn-typography-color);
 `;

@@ -17,7 +17,6 @@ import { useAnimation } from 'framer-motion';
 
 export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-
   const controls = useAnimation();
 
   const links = [
