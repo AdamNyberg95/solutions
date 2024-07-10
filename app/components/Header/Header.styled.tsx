@@ -33,8 +33,8 @@ export const Wrapper = styled.nav<ScrollProps>`
   transition: all 0.3s ease-out;
   background: ${({ isScrolled }) =>
     isScrolled
-      ? 'var(--header-color-light-beigeWhite)'
-      : 'var(--header-color-light-beigeWhite)'};
+      ? 'var(--header-color-shade2)'
+      : 'var(--header-color-shade2)'};
 `;
 
 export const NavList = styled.ul`
@@ -105,5 +105,5 @@ export const BtnPrimarySmall = styled.button`
 
 export const BtnSmallTypography = styled.p`
   font-size: 14px;
-  color: var(--btn-typography-color);
+  color: var(--text-blackdarkmode-whitelightmode);
 `;
