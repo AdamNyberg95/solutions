@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import {
   Container,
   Logga,
@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
   const links = [
     { display: 'Våra tjänster', path: 'vara-tjanster' },
     { display: 'Om oss', path: 'about' },
-    { display: 'Case', path: 'cases' },
+    // { display: 'Case', path: 'cases' },
     { display: 'Kontakt', path: 'contact' },
   ];
 
@@ -51,9 +51,7 @@ export const Header: React.FC = () => {
             </Logga>
             {links.map((link, index) => (
               <NavLinks key={index}>
-                <Link href={`/${link.path}`} passHref>
-                  {link.display}
-                </Link>
+                <Link href={`/${link.path}`}>{link.display}</Link>
               </NavLinks>
             ))}
           </LoggoNavWrapper>

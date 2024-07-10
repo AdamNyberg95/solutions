@@ -18,6 +18,8 @@ export const Container = styled.header`
   flex-direction: row;
   justify-content: center;
   top: 0;
+  z-index: 10;
+  opacity: 0.99;
 `;
 
 export const Wrapper = styled.nav<ScrollProps>`
@@ -86,7 +88,6 @@ export const BtnPrimary = styled.button`
   border-color: white;
   cursor: pointer;
 `;
-
 
 export const BtnPrimarySmall = styled.button`
   width: 132px;

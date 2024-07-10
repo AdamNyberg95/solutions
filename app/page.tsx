@@ -4,10 +4,11 @@ import React, { useEffect, useState } from 'react';
 import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
 import { Popup } from './components/popup/Popup';
-
+import Service from './vara-tjanster/page';
+import LogoSlider from './components/LogoSlider/LogoSlider';
+import EmailForm from './components/EmailForm/EmailForm';
 
 const Home: React.FC = () => {
-
   const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
@@ -28,12 +29,15 @@ const Home: React.FC = () => {
         flexDirection: 'column',
         alignItems: 'center',
         width: '100%',
+        paddingBottom: '50px',
       }}
     >
       <Hero />
-      {showPopup && <Popup  togglePopup={togglePopup} />}
-
-      <About></About>
+      {showPopup && <Popup togglePopup={togglePopup} />}
+      <LogoSlider />
+      <Service />
+      <About />
+      <EmailForm />
     </main>
   );
 };

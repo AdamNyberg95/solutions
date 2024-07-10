@@ -1,15 +1,31 @@
 'use client';
 
 import React from 'react';
-import { Card, CardBtnWrapper, CardTextWrapper, CardWrapper, StyledSection, TitleWrapper, BtnWrapper, StyledLink, TextName, TextRolle, StyledImage } from './About.styled';
-import { BtnTypography, H2, StyledArrowIcon, TypographyBigThin } from '../Hero/Hero.styled';
-import saraImg from '../../../../../image/Sara-2.jpg';
-import { BtnPrimaryBig } from '../Hero/Hero.styled';
-import { IoIosArrowRoundForward } from 'react-icons/io';
+import {
+  Card,
+  CardBtnWrapper,
+  CardTextWrapper,
+  CardWrapper,
+  StyledSection,
+  TitleWrapper,
+  BtnWrapper,
+  StyledLink,
+  TextName,
+  TextRolle,
+  StyledImage,
+} from './About.styled';
+import {
+  BtnTypography,
+  H2,
+  StyledArrowIcon,
+  TypographyBigThin,
+} from '../Hero/Hero.styled';
 
+import { BtnPrimaryBig } from '../Hero/Hero.styled';
 
 export const About: React.FC = () => {
-  const text = 'Vi är två Frontend utvecklare med olika bakgrund inom frontend utveckling som tillsammans med dig vill skapa smarta weblösningar för ditt företag. Vi vill hjäla dig att digitalisera ditt företag och hålla ditt företag i framkant med dagens tekonologi.'
+  const text =
+    'Vi är två Frontend utvecklare med olika bakgrund inom frontend utveckling som tillsammans med dig vill skapa smarta weblösningar för ditt företag. Vi vill hjäla dig att digitalisera ditt företag och hålla ditt företag i framkant med dagens tekonologi.';
   return (
     <>
       <StyledSection>
@@ -21,38 +37,31 @@ export const About: React.FC = () => {
         <CardBtnWrapper>
           <CardWrapper>
             <Card>
-              <StyledImage src={saraImg} alt="profile-img" ></StyledImage>
+              <StyledImage src={'./Sara-2.jpg'} alt="profile-img"></StyledImage>
               <CardTextWrapper>
-                <TextName >Sara Södergård</TextName>
-                <TextRolle>
-                  Frontend utvecklare
-                </TextRolle>
+                <TextName>Sara Södergård</TextName>
+                <TextRolle>Frontend utvecklare</TextRolle>
               </CardTextWrapper>
             </Card>
             <Card>
-              <StyledImage src={saraImg} alt="profile-img" ></StyledImage>
+              <StyledImage src={'/adam.jpeg'} alt="profile-img"></StyledImage>
               <CardTextWrapper>
                 <TextName>Adam Nyberg</TextName>
-                <TextRolle>
-                  Frontend utvecklare
-                </TextRolle>
+                <TextRolle>Frontend utvecklare</TextRolle>
               </CardTextWrapper>
             </Card>
           </CardWrapper>
           <BtnWrapper>
             <StyledLink href={`/about`}>
-              <BtnPrimaryBig> <BtnTypography>Läs mer om oss</BtnTypography>
-                <StyledArrowIcon size={23}  />
-              </BtnPrimaryBig> </StyledLink>
+              <BtnPrimaryBig>
+                {' '}
+                <BtnTypography>Läs mer om oss</BtnTypography>
+                <StyledArrowIcon size={23} />
+              </BtnPrimaryBig>{' '}
+            </StyledLink>
           </BtnWrapper>
-
         </CardBtnWrapper>
-
       </StyledSection>
-
     </>
-  )
-
-
-
-}
+  );
+};

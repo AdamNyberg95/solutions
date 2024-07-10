@@ -1,11 +1,12 @@
 import { StarSvg } from '@/app/assets/icons/StarSvg';
-import {StarSvgDark} from '@/app/assets/icons/StarSvgDark';
+import { StarSvgDark } from '@/app/assets/icons/StarSvgDark';
 import styled from 'styled-components';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
-
 const WiStarsDataURL = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvg)}`;
-const WiStarDarkDataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvgDark)}`;
+const WiStarDarkDataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(
+  StarSvgDark
+)}`;
 
 export const Container = styled.header`
   height: 100vh;
@@ -23,7 +24,7 @@ export const Container = styled.header`
       var(--header-color-light-beige) 100%
     );
 
-    [data-theme='dark'] & {
+  [data-theme='dark'] & {
     background: url(${WiStarDarkDataUrl}) repeat,
       linear-gradient(
         to bottom,
@@ -73,8 +74,7 @@ export const TypographyBigThin = styled.h4`
 
 export const BtnWrapper = styled.div`
   display: flex;
-  flex-direction: row;
-  margin-left: 10px;
+  gap: 10px;
 `;
 
 export const BtnText = styled.button`
@@ -86,7 +86,6 @@ export const BtnText = styled.button`
   margin-bottom: 10px;
   margin-left: 10px;
 
-
   a {
     text-decoration: none;
     color: inherit;
@@ -96,9 +95,7 @@ export const BtnText = styled.button`
 export const TypographySmall = styled.p`
   font-size: 18px;
   color: var(--typography-color);
-  
 `;
-
 
 export const BtnTypography = styled.p`
   font-size: 16px;
@@ -121,10 +118,9 @@ export const BtnPrimaryBig = styled.button`
 `;
 
 export const StyledArrowIcon = styled(IoIosArrowRoundForward)`
-color: var(--icon-color);
-
+  color: var(--icon-color);
 `;
 
 export const StyledIconBtnText = styled(IoIosArrowRoundForward)`
-color: var(--text-color)
+  color: var(--text-color);
 `;

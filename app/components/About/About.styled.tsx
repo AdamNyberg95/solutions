@@ -2,8 +2,6 @@ import styled from 'styled-components';
 import Link from 'next/link';
 import Image from 'next/image';
 
-
-
 export const StyledSection = styled.section`
   max-width: 1200px;
   width: 100%;
@@ -12,66 +10,60 @@ export const StyledSection = styled.section`
 `;
 
 export const TitleWrapper = styled.div`
-display: flex;
-flex-direction: column;
-padding: 40px 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 40px;
 `;
 
-
 export const CardWrapper = styled.div`
-display: flex;
-flex-direction: row;
-justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 `;
 
 export const Card = styled.div`
-max-width: 550px;
-margin: 20px 20px;
+  max-width: 550px;
+  margin: 20px 20px;
 `;
 
-export const StyledImage = styled(Image)`
-width: 300px;
-height: 300px;
-border-radius: 6px;
+export const StyledImage = styled.img`
+  width: 300px;
+  height: 300px;
+  border-radius: 6px;
 `;
 
 export const CardTextWrapper = styled.div`
-margin: 4px 4px;
+  margin: 4px 4px;
 `;
 
 export const TextName = styled.p`
-font-size: 16px;
-margin-top: -2px;
+  font-size: 16px;
+  margin-top: -2px;
 `;
 
 export const TextRolle = styled.p`
-font-size: 14px;
-font-weight: 200;
-margin-top: -12px;
-
-
+  font-size: 14px;
+  font-weight: 200;
+  margin-top: -12px;
 `;
 
-
-
 export const Text1Wrapper = styled.div`
-border-bottom: solid 1px;
-border-color: grey;
-max-width: 200px;
+  border-bottom: solid 1px;
+  border-color: grey;
+  max-width: 200px;
 `;
 
 export const CardBtnWrapper = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
-
 export const BtnWrapper = styled.div`
-margin: 20px 20px;
+  margin: 20px 20px;
 `;
 
 export const StyledLink = styled(Link)`
-text-decoration: none;
+  text-decoration: none;
 `;
