@@ -25,12 +25,13 @@
   --header-color-shade3: #000;
   --blue-color: #99f1ed;
   --typography-color: #fff;
-  --btn-typography-color: #000;
   --btn-background-color: #99f1ed;
   --btn-hover-color: #000;
   --popup-background-color: #3b3b3b;
   --footer-background-color: #99f1ed;
   --footer-background-shade: #bef6f3;
+  --text-blackdarkmode-whitelightmode: #000;
+
 }
 
 body {
