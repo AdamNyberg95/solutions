@@ -1,17 +1,40 @@
 import styled from 'styled-components';
 import { PiCopyrightThin } from 'react-icons/pi';
+import { StarSvgBlue } from '@/app/assets/icons/StarSvgBlue';
+import {StarSvgDark} from '@/app/assets/icons/StarSvgDark';
 
+
+const WiStarsBlueDataURL = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvgBlue)}`;
+const WiStarDarkDataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvgDark)}`;
 
 
 export const Container = styled.footer`
 width: 100vw;
-background-color: var(--footer-background-color);
 height: 430px;
 top: 0;
+width: 100vw;
+  height: 430px;
+  top: 0;
+  background: url(${WiStarDarkDataUrl}) repeat,
+    linear-gradient(
+        to left,
+      var(--footer-background-color) 25%,
+      var(--footer-background-shade) 100%,
+      var(--footer-background-shade) 80%
+    );
+    [data-theme='dark'] & {
+    background: url(${WiStarsBlueDataURL}) repeat,
+      linear-gradient(
+        to left,
+        var(--footer-background-color) 25%,
+        var(--footer-background-shade) 100%,
+      var(--footer-background-shade) 80%
+      );
+  }
 `;
 
 export const TextFooter = styled.p`
-color: var(--footer-text-color);
+color: var(--text-blackdarkmode-whitelightmode);
 font-size: 30px;
 `;
 
@@ -37,20 +60,20 @@ flex-direction: row;
 `;
 
 export const Title = styled.p`
-color: var(--footer-text-color);
+color: var(--text-blackdarkmode-whitelightmode);
 font-size: 20px;
 font-weight: 200;
 `;
 
 export const Typography = styled.p`
-color: var(--footer-text-color);
+color: var(--text-blackdarkmode-whitelightmode);
 font-size: 16px;
 font-weight: 200;
 line-height: 0;
 `;
 
 export const TypographySmall = styled.p`
-color: var(--footer-text-color);
+color: var(--text-blackdarkmode-whitelightmode);
 font-size: 12px;
 font-weight: 200;
 line-height: 0;
@@ -83,7 +106,7 @@ flex-direction: column;
 `;
 
 export const StyledIcon = styled(PiCopyrightThin)`
-color: var(--icon-color);
+color: var(--text-blackdarkmode-whitelightmode);
 margin-top: 3.7px;
 margin-right: 4px;
 
