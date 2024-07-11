@@ -6,10 +6,10 @@ export const StyledButton = styled.a`
 
   text-decoration: none;
   display: flex;
-  gap: 15px;
+  gap: 5px;
   padding: 10px 16px; /* Adjust padding for button size */
   color: #fff;
-  background: red;
+  background: var(--btn-background-color);
   border: 1px solid #fff;
   cursor: pointer;
   position: relative;

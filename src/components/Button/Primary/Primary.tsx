@@ -7,10 +7,7 @@ interface ButtonProps {
 }
 
 const Button: React.FC<ButtonProps> = ({ text, href = '#' }) => {
-  console.log(text);
-
   const splittedText = text.split(' ');
-  console.log(splittedText);
 
   return (
     <StyledButton href={href}>

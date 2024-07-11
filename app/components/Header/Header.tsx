@@ -42,7 +42,6 @@ export const Header: React.FC = () => {
   useEffect(() => {
     controls.start({ opacity: isScrolled ? 1 : 0, y: isScrolled ? 0 : -50 });
   }, [isScrolled, controls]);
-  console.log(theme);
 
   return (
     <Container>
