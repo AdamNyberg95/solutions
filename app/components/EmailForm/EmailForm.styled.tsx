@@ -3,30 +3,58 @@ import styled from 'styled-components';
 export const FormContainer = styled.form`
   display: flex;
   flex-direction: column;
-  width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  border: 1px solid black;
-  border-radius: 8px;
-  background-color: #fbf6f2;
+  width: 450px;
 
-  input,
-  textarea,
-  button {
+  textarea{
     margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 15px;
     font-size: 16px;
-    transition: border-color 0.3s ease; /* Add transition for border color */
+    border-radius: 10px;
+    height: 100px;
+    border: 1px solid #000;
+    font-family: inherit;
   }
 
   input[type='submit'] {
     background-color: #000;
     color: white;
-    border: none;
+    border: white;
+    border-radius: 30px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  input[type='text'],
+  input[type='email'],
+  input[type='password'] {
+    border: none;
+    border-bottom: 1px solid #000; /* Add bottom border */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 10px 2px;
+ 
+  }
+
+  input::placeholder{
+    color: var(--text-color); /* Adjust the color as needed */
+    font-style: inherit;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+
+  label{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 10px 2px;
+  }
+
+  textarea::placeholder {
+    color: grey; /* Adjust the color as needed */
+    font-style: inherit;
   }
 
   input[type='submit']:hover {
@@ -37,7 +65,5 @@ export const FormContainer = styled.form`
   input:focus,
   textarea:focus {
     outline: none;
-    border-color: #000;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Optional: Add a subtle box shadow on focus */
   }
 `;

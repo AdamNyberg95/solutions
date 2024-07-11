@@ -26,10 +26,11 @@ const EmailForm: React.FC = () => {
   return (
     <FormContainer onSubmit={sendEmail}>
       <input type="hidden" name="to_name" value="Recipient" />
-      <input type="text" name="from_name" placeholder="Your Name" />
-      <input type="email" name="reply_to" placeholder="Your Email" />
-      <textarea name="message" placeholder="Your Message" />
-      <input type="submit" value="Send" />
+      <input type="text" name="from_name" placeholder="För- och efternamn" />
+      <input type="email" name="reply_to" placeholder="E-post" />
+      <label>Meddelande</label>
+      <textarea name="message" placeholder="Skriv ditt meddelande.." />
+      <input type="submit" value="Skicka" />
     </FormContainer>
   );
 };
