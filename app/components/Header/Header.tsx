@@ -9,13 +9,14 @@ import {
   NavList,
   Wrapper,
 } from './Header.styled';
-import logga2 from '../../assets/icons/logga1.png';
 import Image from 'next/image';
 import Link from 'next/link';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { useAnimation } from 'framer-motion';
+import { useTheme } from '@/app/context/ThemeContext';
 
 export const Header: React.FC = () => {
+  const { theme, toggleTheme } = useTheme();
   const [isScrolled, setIsScrolled] = useState(false);
   const controls = useAnimation();
 
@@ -38,6 +39,7 @@ export const Header: React.FC = () => {
   useEffect(() => {
     controls.start({ opacity: isScrolled ? 1 : 0, y: isScrolled ? 0 : -50 });
   }, [isScrolled, controls]);
+  console.log(theme);
 
   return (
     <Container>
@@ -46,7 +48,21 @@ export const Header: React.FC = () => {
           <LoggoNavWrapper>
             <Logga>
               <Link href={`/`}>
-                <Image src={logga2} alt="logga" width={75} height={65} />{' '}
+                {theme === 'light' ? (
+                  <Image
+                    src={'/logga1.png'}
+                    alt="logga"
+                    width={75}
+                    height={65}
+                  />
+                ) : (
+                  <Image
+                    src={'/whiteLoggo.png'}
+                    alt="logga"
+                    width={75}
+                    height={65}
+                  />
+                )}
               </Link>
             </Logga>
             {links.map((link, index) => (

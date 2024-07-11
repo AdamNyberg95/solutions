@@ -5,22 +5,21 @@ export const StyledButton = styled.a`
   padding: 0;
 
   text-decoration: none;
-  display: inline-block;
+  display: flex;
+  gap: 15px;
   padding: 10px 16px; /* Adjust padding for button size */
   color: #fff;
-  background: black;
+  background: red;
   border: 1px solid #fff;
   cursor: pointer;
   position: relative;
   overflow: hidden;
   border-radius: 6px;
   transition: all 0.5s ease-out;
+  width: fit-content;
 
   &:hover {
-    color: #333;
-    background-color: #fff;
-    border: 1px solid black;
-
+    background-color: var(--btn-hover-color);
     &:after {
       top: 0;
     }
@@ -29,15 +28,13 @@ export const StyledButton = styled.a`
     }
   }
 
-  /* Icon styling */
   i {
     font-style: normal;
     font-size: 1.2rem;
     line-height: 1;
     display: inline-block;
     height: 100%;
-    padding-left: 1px;
-    padding-right: 1px;
+
     transition: transform 0.3s ease-out; /* Transition for transform */
     &:hover {
       transform: translateY(-4px); /* Move letter up on hover */
