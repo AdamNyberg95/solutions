@@ -58,6 +58,7 @@ export const Footer: React.FC = () => {
                 </TextWrapper>
               </FooterCard>
             </Box>
+
             <Box2>
               <Title>Våra tjänster</Title>
               <WrapperBox2>
@@ -70,6 +71,7 @@ export const Footer: React.FC = () => {
 
               
             </Box2>
+
           </BoxWrapper>
         </Wrapper>
 

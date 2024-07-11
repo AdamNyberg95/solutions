@@ -11,7 +11,7 @@ export const StyledSection = styled.section`
 export const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 40px 40px;
+  padding: 00px 40px;
 `;
 
 export const CardWrapper = styled.div`

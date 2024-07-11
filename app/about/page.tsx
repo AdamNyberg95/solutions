@@ -15,6 +15,7 @@ import {
   CompetenceBorder,
   TextWithBtnWrapper,
   StyledImage,
+  UnderUnderTitle,
 } from './page.styled';
 import { TitleWrapper } from '../components/About/About.styled';
 import {
@@ -29,9 +30,9 @@ import {
 
 const About: React.FC = () => {
   const text =
-    'SA Solutions är ett nystartat web-solution bolag, vars syfte är att hjälpa individer med att skapa digitala lösningar för deras företag. Vår vision är att tillsammans med företag se till så deras digitala lösningar hänger med i dagens teknologi. SA Solutions är belägna i Stockholm och på Åland. <br></br> Vi som står bakom SA Solutions är två frontend utvecklare Sara och Adam,som båda är passionerad av att skapa den bästa weblösningen för ditt företag. Med vår tidigare efarenhet av frontend utveckling tror vi att vi kan hjälpa ditt företag att hålla sig i upto date med dagens tekonlogi.';
+    'SA Solutions är ett nystartat web-solution bolag, vars syfte är att hjälpa företag skapa digitala lösningar. Vår vision är att tillsammans med företag se till så deras digitala lösningar hänger med i dagens teknologi. SA Solutions är belägna i Stockholm och på Åland. <br></br> Vi som står bakom SA Solutions är två utvecklare som båda brinner för att skapa den bästa weblösningen för ditt företag. Med vår tidigare efarenhet av utveckling tror vi att vi kan hjälpa ditt företag att hålla sig i upto-date med dagens tekonlogi.';
   const textSara =
-    'Jag har inom min frontend utbildning varit intern på tech partnern Qte development från november 2023 - juni 2024. Som intern på Qte development har jag fått var en del av spännande kundprojekt och haft eget ansvar över frontend delen av adminnplattfor tillhörande en applikation för en hårtransplantaions klinik. <br></br> Jag tog examen som frontend utvecklar juni 2024 är nu super-pepp på att bygga upp SA Solutions och börja hjälpa företag att hålla sig upto date med dagens tekonoligi.';
+    'Jag är en Frontend utvecklare med passion för UX/UI design. Jag har tidigare varit intern på tech partnern Qte development där jag varit del av flera spännande projekt, bland annat har jag haft eget ansvar över frontend delen av en adminnplattfor tillhörande en applikation för en hårtransplantaions klinik. <br></br> Jag tog examen som frontend utvecklare juni 2024 och är nu super pepp på att börja hjälpa företag vara upto-date med dagens tekonologi.';
   const competenceListSara = [
     'React JS',
     'TypeScript',
@@ -39,8 +40,9 @@ const About: React.FC = () => {
     'Next JS',
     'HTML',
     'CSS',
+  'UX/UI'
   ];
-  const competenceListAdam = ['React JS'];
+  const competenceListAdam = ['React JS', 'Backend'];
 
   return (
     <>
@@ -62,6 +64,8 @@ const About: React.FC = () => {
             <TextWrapper>
               <CardTitle>Adam Nyberg</CardTitle>
               <UnderTitle>Coding since, XX</UnderTitle>
+              <UnderUnderTitle>Frontend utvecklare & Backend utvecklare</UnderUnderTitle>
+
               <Border />
               <Title2>Om Adam</Title2>
               <Text></Text>
@@ -80,7 +84,9 @@ const About: React.FC = () => {
           <Card>
             <TextWrapper>
               <CardTitle>Sara Södergård</CardTitle>
-              <UnderTitle>Coding since, februari 2022</UnderTitle>
+              <UnderTitle>Coding since, February 2022</UnderTitle>
+              <UnderUnderTitle>Frontend utvecklare & UX/UI designer</UnderUnderTitle>
+
               <Border />
               <Title2>Om Sara</Title2>
               <Text dangerouslySetInnerHTML={{ __html: textSara }} />

@@ -3,26 +3,27 @@ import styled from 'styled-components';
 export const StyledSection = styled.section`
   max-width: 1200px;
   width: 100%;
-  padding: 150px 0px 0px 0px;
-  height: 700px;
+  padding: 150px 0px 150px 0px;
 `;
 
 export const TextWrapper = styled.div`
 width: 50%;
-height: 600px;
 `;
 
 export const Wrapper = styled.div`
 display: flex;
+flex-direction: column;
+justify-content: center;
+`;
+
+export const TextAndFormWrapper = styled.div`
+display: flex;
 flex-direction: row;
 justify-content: center;
-align-items: center;
-margin-top: 40px;
+padding: 0px 30px;
 `;
 
 export const EmailFormWrapper = styled.div`
-width: 50%;
-height: 600px;
 display: flex;
 flex-direction: column;
 `;
@@ -30,6 +31,7 @@ flex-direction: column;
 export const ContactBox = styled.div`
 display: flex;
 flex-direction: row;
+margin-left: 3px;
 `;
 
 export const InsideBox = styled.div`

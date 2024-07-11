@@ -2,21 +2,22 @@
 
 import React from 'react';
 import EmailForm from '../components/EmailForm/EmailForm';
-import { ContactBox, EmailFormWrapper, InsideBox, StyledSection, TextWrapper, Typography, Wrapper } from './page.styled';
+import { ContactBox, EmailFormWrapper, InsideBox, StyledSection, TextWrapper, Typography, TextAndFormWrapper, Wrapper } from './page.styled';
 import { ColorSpan, H2, TypographyBigThin } from '../components/Hero/Hero.styled';
 
 const Contact: React.FC = () => {
   return (
     <StyledSection>
-          <h1>Kontakt</h1>
+
       <Wrapper>
-  
+      <h1 style={{marginLeft: '90px'}}>Kontakt</h1>
+      <TextAndFormWrapper>
       <TextWrapper>
     
   
-      <H2 style={{marginBottom: '55px' }}>Kontakta oss</H2>
-      <H2> på <ColorSpan>SA Solutions</ColorSpan></H2>
-      <TypographyBigThin style={{marginTop: '50px', width: '85%', marginLeft: '0px'}}>Välkommen att kontakta oss - Vi vill hjälpa dig digitalisera eller förbättra ditt företags digitalakanaler!</TypographyBigThin>
+      <H2>Kontakta oss</H2>
+     
+      <TypographyBigThin style={{marginTop: '50px', width: '87%', marginLeft: '0px'}}>Vi vill hjälpa dig digitalisera eller förbättra ditt företags digitalakanaler. Välkommen att kontakta oss!</TypographyBigThin>
 
       <ContactBox>
         <InsideBox>
@@ -51,10 +52,11 @@ const Contact: React.FC = () => {
 
 
 <EmailFormWrapper>
-  <h2>Skicka ett meddelande!</h2>
+  <h3>Skicka ett meddelande</h3>
       <EmailForm />
 
       </EmailFormWrapper>
+      </TextAndFormWrapper>
       </Wrapper>
     </StyledSection>
   );

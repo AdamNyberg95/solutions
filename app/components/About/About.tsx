@@ -25,7 +25,7 @@ import { BtnPrimaryBig } from '../Hero/Hero.styled';
 
 export const About: React.FC = () => {
   const text =
-    'Vi är två Frontend utvecklare med olika bakgrund inom frontend utveckling som tillsammans med dig vill skapa smarta weblösningar för ditt företag. Vi vill hjäla dig att digitalisera ditt företag och hålla ditt företag i framkant med dagens tekonologi.';
+    'Vi är två utvecklare med olika bakgrund inom utveckling och tech som tillsammans med dig vill skapa smarta weblösningar för ditt företag. Vi vill hjäla dig att digitalisera ditt företag och hålla ditt företag i framkant med dagens teknologi.';
   return (
     <>
       <StyledSection>
@@ -41,6 +41,8 @@ export const About: React.FC = () => {
               <CardTextWrapper>
                 <TextName>Sara Södergård</TextName>
                 <TextRolle>Frontend utvecklare</TextRolle>
+                <TextRolle>UX/UI designer</TextRolle>
+
               </CardTextWrapper>
             </Card>
             <Card>
@@ -48,6 +50,8 @@ export const About: React.FC = () => {
               <CardTextWrapper>
                 <TextName>Adam Nyberg</TextName>
                 <TextRolle>Frontend utvecklare</TextRolle>
+                <TextRolle>Backend utvecklare</TextRolle>
+
               </CardTextWrapper>
             </Card>
           </CardWrapper>

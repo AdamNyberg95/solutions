@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const StyledSection = styled.section`
   max-width: 1200px;
   width: 100%;
-  padding: 150px 0px 0px 0px;
+  padding: 150px 0px 150px 0px;
   height: 100%;
 `;
 
@@ -34,6 +34,12 @@ export const UnderTitle = styled.p`
 font-size: 18px;
 font-weight: 200;
 margin-top: -16px;
+`;
+export const UnderUnderTitle = styled.p`
+font-size: 14px;
+font-weight: 200;
+margin-top: -16px;
+margin-left: 2px;
 `;
 
 export const TextWithBtnWrapper = styled.div`
@@ -74,6 +80,6 @@ margin-right: 5px;
 
 export const StyledImage = styled(Image)`
 width: 350px; 
-height: 420px;
+height: 440px;
 border-radius: 6px;
 `;
