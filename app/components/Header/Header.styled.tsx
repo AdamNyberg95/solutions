@@ -27,7 +27,7 @@ export const Wrapper = styled.nav<ScrollProps>`
   margin-top: ${({ isScrolled }) => (isScrolled ? '10px' : '')};
   padding: ${({ isScrolled }) => (isScrolled ? '0px' : '10px')};
   box-shadow: ${({ isScrolled }) =>
-    isScrolled ? '1.5px 1.5px 2px 2px rgba(0.1, 0.1, 0.1, 0.1)' : 'none'};
+    isScrolled ? '1.5px 1.5px 2px 2px var(--header-boxshadow-color)' : 'none'};
   border-radius: ${({ isScrolled }) => (isScrolled ? '10px' : '0')};
   height: 70px;
   display: flex;
@@ -35,8 +35,8 @@ export const Wrapper = styled.nav<ScrollProps>`
   transition: all 0.3s ease-out;
   background: ${({ isScrolled }) =>
     isScrolled
-      ? 'var(--header-color-light-beigeWhite)'
-      : 'var(--header-color-light-beigeWhite)'};
+      ? 'var(--header-scroll-background)'
+      : 'transparent'};
 `;
 
 export const NavList = styled.ul`
@@ -106,5 +106,5 @@ export const BtnPrimarySmall = styled.button`
 
 export const BtnSmallTypography = styled.p`
   font-size: 14px;
-  color: var(--btn-typography-color);
+  color: var(--text-blackdarkmode-whitelightmode);
 `;

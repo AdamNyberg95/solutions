@@ -17,22 +17,25 @@ export const Container = styled.header`
   background: url(${WiStarsDataURL}) repeat,
     linear-gradient(
       to bottom,
-      var(--header-color-light-beigeWhite) 0%,
-      var(--header-color-light-beige) 25%,
+      var(--header-color-shade2) 0%,
+      var(--header-color-shade3) 25%,
       var(--header-color) 50%,
       var(--header-color-shade) 75%,
-      var(--header-color-light-beige) 100%
+      var(--header-color-white) 100%
     );
 
   [data-theme='dark'] & {
     background: url(${WiStarDarkDataUrl}) repeat,
       linear-gradient(
         to bottom,
-        var(--header-color-light-beigeWhite) 0%,
-        var(--header-color-light-beige) 25%,
+        var(--header-color-shade2) 0%,
+        var(--header-color-shade3) 25%,
         var(--header-color) 50%,
-        var(--header-color-shade) 75%,
-        var(--header-color-light-beige) 100%
+        var(--header-color-shade) 85%,
+        var(--header-color-shade3) 100%
+     
+
+   
       );
   }
 `;
@@ -51,7 +54,7 @@ export const H1 = styled.h1`
   font-size: 72px;
   font-weight: 300;
   line-height: 0px;
-  color: var(--hero-h1-color);
+  color: var(--blue-color);
 `;
 
 export const H2 = styled.h2`
@@ -62,7 +65,7 @@ export const H2 = styled.h2`
 `;
 
 export const ColorSpan = styled.span`
-  color: var(--hero-h1-color);
+  color: var(--blue-color);
 `;
 
 export const TypographyBigThin = styled.h4`
@@ -94,12 +97,12 @@ export const BtnText = styled.button`
 
 export const TypographySmall = styled.p`
   font-size: 18px;
-  color: var(--typography-color);
+  color: var(--text-color);
 `;
 
 export const BtnTypography = styled.p`
   font-size: 16px;
-  color: var(--btn-typography-color);
+  color: var(--text-blackdarkmode-whitelightmode);
 `;
 
 export const BtnPrimaryBig = styled.button`
@@ -118,7 +121,7 @@ export const BtnPrimaryBig = styled.button`
 `;
 
 export const StyledArrowIcon = styled(IoIosArrowRoundForward)`
-  color: var(--icon-color);
+  color: var(--text-blackdarkmode-whitelightmode);
 `;
 
 export const StyledIconBtnText = styled(IoIosArrowRoundForward)`
