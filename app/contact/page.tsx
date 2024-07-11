@@ -7,7 +7,7 @@ import { StyledSection } from './page.styled';
 const Contact: React.FC = () => {
   return (
     <StyledSection>
-      <h1>AS solutions, here are a few cases</h1>
+      <h1>Kontakta oss</h1>
 
       <EmailForm />
     </StyledSection>

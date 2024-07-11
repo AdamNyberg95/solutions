@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import Link from 'next/link';
-import Image from 'next/image';
 
 export const StyledSection = styled.section`
   max-width: 1200px;

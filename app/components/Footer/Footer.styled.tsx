@@ -118,6 +118,22 @@ flex-direction: row;
 padding: 10px 10px;
 `;
 
+export const WrapperBox2 = styled.div`
+margin-left: 3px;
+margin-top: -18px;
+`;
+
+export const TypographyBox2 = styled.p`
+color: var(--text-blackdarkmode-whitelightmode);
+font-size: 16px;
+font-weight: 200;
+`;
+
+export const StyledImage = styled.img`
+width: 72px;
+height: 80px;
+
+`;
 
 
 

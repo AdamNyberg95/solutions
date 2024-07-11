@@ -17,10 +17,17 @@ import {
   EndTypographyWrapper,
   TextAndIconWrapper,
   StyledIcon,
+  WrapperBox2,
+  TypographyBox2,
+  StyledImage,
 } from './Footer.styled';
+import { useTheme } from '@/app/context/ThemeContext';
+
+
 
 
 export const Footer: React.FC = () => {
+  const { theme } = useTheme(); 
   return (
     <>
       {' '}
@@ -31,13 +38,9 @@ export const Footer: React.FC = () => {
             <Box>
               <Title>Kontakt</Title>
               <FooterCard>
-                <img
-                  style={{
-                    width: '72px',
-                    backgroundColor: '#ffff',
-                    height: '80px',
-                  }}
-                ></img>
+                <StyledImage
+                src={'./Sara-2.jpg'} alt="profile-img"  
+                ></StyledImage>
                 <TextWrapper>
                   <Typography style={{marginBottom: '8px'}}>Sara@sasolutions.com</Typography>
                   <Typography style={{ fontWeight: '200' }}>
@@ -46,13 +49,9 @@ export const Footer: React.FC = () => {
                 </TextWrapper>
               </FooterCard>
               <FooterCard>
-                <img
-                  style={{
-                    width: '72px',
-                    backgroundColor: '#ffff',
-                    height: '80px',
-                  }}
-                ></img>
+                <StyledImage
+                  src={'/adam.jpeg'} alt="profile-img"
+                ></StyledImage>
                 <TextWrapper>
                   <Typography style={{marginBottom: '8px'}}>Adam@sasolutions.com</Typography>
                   <Typography>+46 763437347</Typography>
@@ -60,7 +59,16 @@ export const Footer: React.FC = () => {
               </FooterCard>
             </Box>
             <Box2>
-              <Title>Kompetenser</Title>
+              <Title>Våra tjänster</Title>
+              <WrapperBox2>
+              <TypographyBox2>Webutveckling</TypographyBox2>
+              <TypographyBox2>UXI/UX Design</TypographyBox2>
+              <TypographyBox2>Digital marknadsföring</TypographyBox2>
+              </WrapperBox2>
+
+            
+
+              
             </Box2>
           </BoxWrapper>
         </Wrapper>
