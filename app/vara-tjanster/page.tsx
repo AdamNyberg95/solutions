@@ -6,6 +6,7 @@ import ServiceItem from './components/ServiceItem/ServiceItem';
 import ActiveText from './components/ActiveText/ActiveText'; // Adjust the import path as needed
 import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
 
+// Define a type for the service
 type Service = {
   Icon: React.ElementType;
   title: string;
@@ -38,7 +39,7 @@ const Service: React.FC = () => {
   const handleServiceClick = (service: Service) => {
     setActiveService(service);
   };
-  console.log(activeService);
+
   return (
     <StyledSection>
       <h1>Våra tjänster</h1>
