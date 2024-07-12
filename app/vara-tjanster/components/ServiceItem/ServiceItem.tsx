@@ -13,11 +13,21 @@ interface ServiceItemProps {
   Icon: IconType;
   title: string;
   text: string;
+  onClick: () => void;
+  isActive: boolean; // Add isActive prop
 }
 
-const ServiceItem: React.FC<ServiceItemProps> = ({ Icon, title, text }) => {
+const ServiceItem: React.FC<ServiceItemProps> = ({
+  Icon,
+  title,
+  text,
+  onClick,
+  isActive,
+}) => {
   return (
-    <ItemContainer>
+    <ItemContainer onClick={onClick} isActive={isActive}>
+      {' '}
+      {/* Pass isActive to styles */}
       <div
         style={{
           display: 'flex',

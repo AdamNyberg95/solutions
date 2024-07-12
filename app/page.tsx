@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react';
 import { Hero } from './components/Hero/Hero';
 import { About } from './components/About/About';
 import { Popup } from './components/popup/Popup';
-import Service from './vara-tjanster/page';
+import Services from './components/Services/Services';
 import LogoSlider from './components/LogoSlider/LogoSlider';
 import EmailForm from './components/EmailForm/EmailForm';
 
@@ -35,7 +35,7 @@ const Home: React.FC = () => {
       <Hero />
       {showPopup && <Popup togglePopup={togglePopup} />}
       <LogoSlider />
-      <Service />
+      <Services />
       <About />
       <EmailForm />
     </main>

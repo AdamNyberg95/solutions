@@ -1,18 +1,20 @@
 import styled from 'styled-components';
 
-export const ItemContainer = styled.div`
+export const ItemContainer = styled.div<{ isActive: boolean }>`
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: flex-start;
   padding: 20px;
-  margin: 10px;
   border: 1px solid #ccc;
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease,
+    background-color 0.3s ease, border 0.3s ease;
   cursor: pointer;
+  background-color: ${({ isActive }) => (isActive ? '#f0f0f0' : 'white')};
+
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);

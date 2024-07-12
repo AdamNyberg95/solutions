@@ -1,6 +1,6 @@
 import { StarSvg } from '@/app/assets/icons/StarSvg';
 import { StarSvgDark } from '@/app/assets/icons/StarSvgDark';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { IoIosArrowRoundForward } from 'react-icons/io';
 
 const WiStarsDataURL = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvg)}`;
@@ -33,9 +33,6 @@ export const Container = styled.header`
         var(--header-color) 50%,
         var(--header-color-shade) 85%,
         var(--header-color-shade3) 100%
-     
-
-   
       );
   }
 `;
