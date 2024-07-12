@@ -11,13 +11,15 @@ export const FormContainer = styled.form`
     font-size: 16px;
     border-radius: 10px;
     height: 100px;
-    border: 1px solid #000;
+    border: 1px solid grey;
     font-family: inherit;
+    background-color: transparent; 
+
   }
 
   input[type='submit'] {
-    background-color: #000;
-    color: white;
+    background-color: var(--footer-background-color);
+    color: var(--text-blackdarkmode-whitelightmode);
     border: white;
     border-radius: 30px;
     cursor: pointer;
@@ -31,15 +33,18 @@ export const FormContainer = styled.form`
   input[type='email'],
   input[type='password'] {
     border: none;
-    border-bottom: 1px solid #000; /* Add bottom border */
+    border-bottom: 1px solid var(--form-border-color); 
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 10px 2px;
+    background-color: transparent; 
+
  
   }
 
   input::placeholder{
-    color: var(--text-color); /* Adjust the color as needed */
+    color: var(--text-color-form); 
+    font-weight: 200;
     font-style: inherit;
     font-size: 18px;
     margin-bottom: 15px;
@@ -53,7 +58,7 @@ export const FormContainer = styled.form`
   }
 
   textarea::placeholder {
-    color: grey; /* Adjust the color as needed */
+    color: grey; 
     font-style: inherit;
   }
 

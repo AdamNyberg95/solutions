@@ -87,7 +87,7 @@ const About: React.FC = () => {
               <UnderTitle>Coding since, February 2022</UnderTitle>
               <UnderUnderTitle>Frontend utvecklare & UX/UI designer</UnderUnderTitle>
 
-              <Border />
+              <Border/>
               <Title2>Om Sara</Title2>
               <Text dangerouslySetInnerHTML={{ __html: textSara }} />
               <TextWithBtnWrapper>

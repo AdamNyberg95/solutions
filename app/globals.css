@@ -17,6 +17,9 @@
   --popup-background-color: #fbf6f2;
   --footer-background-color: #000;
   --footer-background-shade: #222222;
+  --text-color-form:#222222;
+  --form-border-color: #000;
+
 }
 
 [data-theme='dark'] {
@@ -36,6 +39,11 @@
   --footer-background-color: #99f1ed;
   --footer-background-shade: #bef6f3;
   --text-blackdarkmode-whitelightmode: #000;
+  --text-color-form:#fff;
+  --form-border-color: grey;
+
+
+
 }
 
 body {

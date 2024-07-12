@@ -13,12 +13,8 @@ const Contact: React.FC = () => {
       <h1 style={{marginLeft: '90px'}}>Kontakt</h1>
       <TextAndFormWrapper>
       <TextWrapper>
-    
-  
       <H2>Kontakta oss</H2>
-     
       <TypographyBigThin style={{marginTop: '50px', width: '87%', marginLeft: '0px'}}>Vi vill hjälpa dig digitalisera eller förbättra ditt företags digitalakanaler. Välkommen att kontakta oss!</TypographyBigThin>
-
       <ContactBox>
         <InsideBox>
       <h3>Mail</h3>
