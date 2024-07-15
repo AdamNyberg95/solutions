@@ -8,7 +8,6 @@ import {
   BtnTypography,
   BtnWrapper,
   Container,
-  H1,
   H2,
   TextBox,
   TypographyBigThin,
@@ -20,6 +19,7 @@ import { BtnPrimary } from '../Header/Header.styled';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Primary from '@/src/components/Button/Primary/Primary';
+import H1 from '@/src/components/Typography/H1';
 
 export const Hero: React.FC = () => {
   const text =
@@ -30,7 +30,9 @@ export const Hero: React.FC = () => {
   return (
     <Container>
       <TextBox>
-        <H1>SA Solutions</H1>
+        <H1 color={'var(--blue-color)'} fontSize={'72px'} fontWeight="300">
+          SA Solutions
+        </H1>
         <H2>
           Your solution for <ColorSpan>your</ColorSpan> web
         </H2>

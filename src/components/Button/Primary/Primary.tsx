@@ -1,3 +1,4 @@
+import { StyledArrowIcon } from '@/app/components/Hero/Hero.styled';
 import React from 'react';
 import { StyledButton } from './Primary.styled';
 
@@ -21,6 +22,9 @@ const Button: React.FC<ButtonProps> = ({ text, href = '#' }) => {
           ))}
         </div>
       ))}
+      <i style={{ lineHeight: '0', display: 'flex', alignItems: 'center' }}>
+        <StyledArrowIcon size={18} />
+      </i>
     </StyledButton>
   );
 };

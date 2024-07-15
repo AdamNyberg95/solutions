@@ -37,7 +37,6 @@ const Home: React.FC = () => {
       <LogoSlider />
       <Services />
       <About />
-      <EmailForm />
     </main>
   );
 };

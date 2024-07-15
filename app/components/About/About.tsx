@@ -20,6 +20,7 @@ import {
   StyledArrowIcon,
   TypographyBigThin,
 } from '../Hero/Hero.styled';
+import Primary from '@/src/components/Button/Primary/Primary';
 
 import { BtnPrimaryBig } from '../Hero/Hero.styled';
 
@@ -42,7 +43,6 @@ export const About: React.FC = () => {
                 <TextName>Sara Södergård</TextName>
                 <TextRolle>Frontend utvecklare</TextRolle>
                 <TextRolle>UX/UI designer</TextRolle>
-
               </CardTextWrapper>
             </Card>
             <Card>
@@ -51,17 +51,12 @@ export const About: React.FC = () => {
                 <TextName>Adam Nyberg</TextName>
                 <TextRolle>Frontend utvecklare</TextRolle>
                 <TextRolle>Backend utvecklare</TextRolle>
-
               </CardTextWrapper>
             </Card>
           </CardWrapper>
           <BtnWrapper>
             <StyledLink href={`/about`}>
-              <BtnPrimaryBig>
-                {' '}
-                <BtnTypography>Läs mer om oss</BtnTypography>
-                <StyledArrowIcon size={23} />
-              </BtnPrimaryBig>{' '}
+              <Primary text="Kontakta oss" />
             </StyledLink>
           </BtnWrapper>
         </CardBtnWrapper>

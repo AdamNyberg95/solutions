@@ -27,6 +27,7 @@ import {
   BtnPrimarySmall,
   BtnSmallTypography,
 } from '../components/Header/Header.styled';
+import H1 from '@/src/components/Typography/H1';
 
 const About: React.FC = () => {
   const text =
@@ -40,7 +41,7 @@ const About: React.FC = () => {
     'Next JS',
     'HTML',
     'CSS',
-  'UX/UI'
+    'UX/UI',
   ];
   const competenceListAdam = ['React JS', 'Backend'];
 
@@ -48,7 +49,7 @@ const About: React.FC = () => {
     <>
       <StyledSection>
         <TitleWrapper>
-          <h1>Om oss</h1>
+          <H1>SA Solutions</H1>
           <H2>Vi är SA Solutions</H2>
           <TypographyBigThin dangerouslySetInnerHTML={{ __html: text }} />
         </TitleWrapper>
@@ -64,7 +65,9 @@ const About: React.FC = () => {
             <TextWrapper>
               <CardTitle>Adam Nyberg</CardTitle>
               <UnderTitle>Coding since, XX</UnderTitle>
-              <UnderUnderTitle>Frontend utvecklare & Backend utvecklare</UnderUnderTitle>
+              <UnderUnderTitle>
+                Frontend utvecklare & Backend utvecklare
+              </UnderUnderTitle>
 
               <Border />
               <Title2>Om Adam</Title2>
@@ -85,9 +88,11 @@ const About: React.FC = () => {
             <TextWrapper>
               <CardTitle>Sara Södergård</CardTitle>
               <UnderTitle>Coding since, February 2022</UnderTitle>
-              <UnderUnderTitle>Frontend utvecklare & UX/UI designer</UnderUnderTitle>
+              <UnderUnderTitle>
+                Frontend utvecklare & UX/UI designer
+              </UnderUnderTitle>
 
-              <Border/>
+              <Border />
               <Title2>Om Sara</Title2>
               <Text dangerouslySetInnerHTML={{ __html: textSara }} />
               <TextWithBtnWrapper>

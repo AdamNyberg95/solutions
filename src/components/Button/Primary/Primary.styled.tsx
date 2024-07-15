@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const StyledButton = styled.a`
   margin: 0;
   padding: 0;
-
   text-decoration: none;
   display: flex;
   gap: 5px;
@@ -14,7 +13,7 @@ export const StyledButton = styled.a`
   cursor: pointer;
   position: relative;
   overflow: hidden;
-  border-radius: 6px;
+  border-radius: 30px;
   transition: all 0.5s ease-out;
   width: fit-content;
 
@@ -30,7 +29,7 @@ export const StyledButton = styled.a`
 
   i {
     font-style: normal;
-    font-size: 1.2rem;
+    font-size: 1rem;
     line-height: 1;
     display: inline-block;
     height: 100%;
