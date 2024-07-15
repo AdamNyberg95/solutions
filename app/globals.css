@@ -1,9 +1,9 @@
 :root {
-  --background-color: #fff;
+  --background-color: #fefafa;
   --text-color: #222222;
   --header-color: #fbf6f2;
   --header-color-shade: #a8c9c6;
-  --header-color-shade2: #fbf6f2;
+  --header-color-shade2: #fefafa;
   --header-color-shade3: #f9f2eb;
   --header-scroll-background: #fbf6f2;
   --header-color-white: #fff;
@@ -14,7 +14,7 @@
   --btn-hover-color: rgba(0, 0, 0, 0.85);
   --blue-color: #619894;
   --typography-color: #222222;
-  --popup-background-color: #fbf6f2;
+  --popup-background-color: #f1e9e0;
   --footer-background-color: #000;
   --footer-background-shade: #222222;
   --text-color-form:#222222;

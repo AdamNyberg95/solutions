@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
     <StyledSection>
 
       <Wrapper>
-      <h1 style={{marginLeft: '90px'}}>Kontakt</h1>
+      <h1 style={{marginLeft: '31px'}}>Kontakt</h1>
       <TextAndFormWrapper>
       <TextWrapper>
       <H2>Kontakta oss</H2>

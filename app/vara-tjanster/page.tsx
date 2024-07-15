@@ -16,18 +16,18 @@ type Service = {
 const services: Service[] = [
   {
     Icon: IoIosCode,
-    title: 'Web Development',
-    text: 'We provide modern web development services to help you build your online presence.',
+    title: 'Web Utveckling',
+    text: 'Vi skapar smarta och moderna weblösningar för ditt företag.',
   },
   {
     Icon: IoIosBrush,
-    title: 'UI/UX Design',
-    text: 'Our design team will ensure your product looks amazing and provides a great user experience.',
+    title: 'UI/UX Design & Branding',
+    text: 'Vi hjälper dig ta fram den bästa användarupplevelsen där ditt varukmärke är i centrum.',
   },
   {
     Icon: IoIosMegaphone,
-    title: 'Digital Marketing',
-    text: 'Reach a larger audience with our effective digital marketing strategies.',
+    title: 'Analys, SEO och Growth',
+    text: 'Vi analyserar, tänker på sökoptimering och vill hjälpa ditt företag växa.',
   },
 ];
 

@@ -21,7 +21,7 @@ export const Container = styled.header`
       var(--header-color-shade3) 25%,
       var(--header-color) 50%,
       var(--header-color-shade) 75%,
-      var(--header-color-white) 100%
+      var(--header-color-shade2) 100%
     );
 
   [data-theme='dark'] & {

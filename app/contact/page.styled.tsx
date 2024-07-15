@@ -19,7 +19,6 @@ justify-content: center;
 export const TextAndFormWrapper = styled.div`
 display: flex;
 flex-direction: row;
-justify-content: center;
 padding: 0px 30px;
 `;
 
