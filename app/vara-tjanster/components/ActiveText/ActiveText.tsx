@@ -1,30 +1,39 @@
 import React from 'react';
-import { StyledContainer, StyledLine } from './ActiveText.styled';
+import { StyledActiveText, StyledActiveTitle, StyledContainer, StyledLine, Text } from './ActiveText.styled';
 
 type ActiveTextProps = {
   text: string;
+  activeTitle: string;
+  activeText: string;
 };
 
-const ActiveText: React.FC<ActiveTextProps> = ({ text }) => {
+const ActiveText: React.FC<ActiveTextProps> = ({ activeText , activeTitle }) => {
   return (
     <StyledContainer>
       <div
-        style={{ display: 'flex', justifyContent: 'flex-start', width: '100%' }}
+        style={{ display: 'flex', justifyContent: 'flex-start', width: '85%' }}
       >
-        {text}
+      <StyledActiveTitle> {activeTitle} </StyledActiveTitle> 
       </div>
-      <StyledLine />
+
       <div
-        style={{ display: 'flex', justifyContent: 'flex-start', width: '100%' }}
+        style={{ display: 'flex', justifyContent: 'flex-start', width: '85%', marginTop: '-30px' }}
       >
-        {text}
+       <StyledActiveText>  {activeText}  </StyledActiveText> 
       </div>
-      <StyledLine />
+
       <div
-        style={{ display: 'flex', justifyContent: 'flex-start', width: '100%' }}
+        style={{ display: 'flex', justifyContent: 'flex-start', width: '85%', marginTop: '-30px' }}
       >
-        {text}
+       <Text>Responsiv design</Text>
+       <Text>Tillgänglighet</Text>
+       <Text>Tillgänglighet</Text>
+
+
       </div>
+
+      
+    
     </StyledContainer>
   );
 };

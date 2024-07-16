@@ -28,7 +28,7 @@ const Services: React.FC = () => {
         >
           <ServiceItem
             Icon={IoIosCode}
-            title="Web utveckling"
+            title="Webbutveckling"
             text="Vi skapar smarta och moderna weblösningar för ditt företag."
           />
         </Link>

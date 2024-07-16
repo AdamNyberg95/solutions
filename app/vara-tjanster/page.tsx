@@ -10,24 +10,37 @@ import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
 type Service = {
   Icon: React.ElementType;
   title: string;
+  activeTitle: string;
   text: string;
+  activeText: string;
 };
 
 const services: Service[] = [
   {
     Icon: IoIosCode,
-    title: 'Web Utveckling',
+    title: 'Webbutveckling',
+    activeTitle: 'Vi är experter på Webbutveckling',
     text: 'Vi skapar smarta och moderna weblösningar för ditt företag.',
+    activeText: 'Vi kan både frontend- och backend utveckling. Vi vill vara din partner oavsett om du vill ha en enkel hemsidan eller en mer komplex webb-lösning.',
+
+
+
   },
   {
     Icon: IoIosBrush,
     title: 'UI/UX Design & Branding',
+    activeTitle: 'Användarupplevelsen och ditt varumärke är A och O',
     text: 'Vi hjälper dig ta fram den bästa användarupplevelsen där ditt varukmärke är i centrum.',
+    activeText: 'Vi förstår att en snabb webbplats med rätt gränssnitt och en design som speglar ditt varumärke är avgörande för ditt företags framgång.',
+
   },
   {
     Icon: IoIosMegaphone,
     title: 'Analys, SEO och Growth',
-    text: 'Vi analyserar, tänker på sökoptimering och vill hjälpa ditt företag växa.',
+    activeTitle: 'Vi kan hjälpa ditt företag att växa',
+    text: 'Vi tänker på analys och sökoptimering och vill hjälpa ditt företag växa.',
+    activeText: 'Vi trendspanar och analysera vad som fungerar och inte fungrar för dina kunder. Vi ser till att sökoptimera din webb. På så sätt kan vi hjälpa ditt företag nå nya höjder!',
+
   },
 ];
 
@@ -56,7 +69,7 @@ const Service: React.FC = () => {
             />
           ))}
         </StyledToggle>
-        {activeService && <ActiveText text={activeService.text} />}
+        {activeService && <ActiveText activeText={activeService.activeText} text={''} activeTitle={activeService.activeTitle} />}
       </StyledDiv>
     </StyledSection>
   );

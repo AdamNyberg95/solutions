@@ -35,14 +35,15 @@ const ServiceItem: React.FC<ServiceItemProps> = ({
           gap: '10px',
           justifyContent: 'flex-start',
           width: '100%',
+        
         }}
       >
         <IconContainer>
-          <Icon />
+          <Icon color='#99f1ed' />
         </IconContainer>
-        <Title>{title}</Title>
+        <Title style={{color: 'white'}}>{title}</Title>
       </div>
-      <Text>{text}</Text>
+      <Text style={{color: 'white'}}>{text}</Text>
     </ItemContainer>
   );
 };

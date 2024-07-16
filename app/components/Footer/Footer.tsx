@@ -62,14 +62,10 @@ export const Footer: React.FC = () => {
             <Box2>
               <Title>Våra tjänster</Title>
               <WrapperBox2>
-              <TypographyBox2>Webutveckling</TypographyBox2>
-              <TypographyBox2>UXI/UX Design</TypographyBox2>
-              <TypographyBox2>Digital marknadsföring</TypographyBox2>
+              <TypographyBox2>Webbutveckling</TypographyBox2>
+              <TypographyBox2>UI/UX Design & Branding</TypographyBox2>
+              <TypographyBox2>Analys, SEO och Growth</TypographyBox2>
               </WrapperBox2>
-
-            
-
-              
             </Box2>
 
           </BoxWrapper>

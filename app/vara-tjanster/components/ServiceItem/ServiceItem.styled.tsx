@@ -3,21 +3,20 @@ import styled from 'styled-components';
 export const ItemContainer = styled.div<{ isActive: boolean }>`
   display: flex;
   flex-direction: column;
-  align-items: center;
   text-align: flex-start;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #99f1ed;
   border-radius: 8px;
   width: 100%;
   box-sizing: border-box;
   transition: transform 0.3s ease, box-shadow 0.3s ease,
     background-color 0.3s ease, border 0.3s ease;
   cursor: pointer;
-  background-color: ${({ isActive }) => (isActive ? '#f0f0f0' : 'white')};
+  background-color: ${({ isActive }) => (isActive ? 'black' : '#222222')};
 
   &:hover {
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #99f1ed;
   }
 `;
 
@@ -29,8 +28,11 @@ export const IconContainer = styled.div`
 
 export const Title = styled.h2`
   font-size: 18px;
+  color: white;
+
 `;
 
 export const Text = styled.p`
   font-size: 14px;
+  color: white;
 `;
