@@ -19,6 +19,11 @@
   --footer-background-shade: #222222;
   --text-color-form:#222222;
   --form-border-color: #000;
+  --reviewSlider-background-color: #ddd9d3;
+  --reviewSlider-boxshadow-color: rgba(0.1, 0.1, 0.1, 0.1);
+  --pagination-background-color: #222222;
+
+
 
 }
 
@@ -41,6 +46,12 @@
   --text-blackdarkmode-whitelightmode: #000;
   --text-color-form:#FBFCFF;
   --form-border-color: grey;
+  --reviewSlider-background-color: #000;
+  --reviewSlider-boxshadow-color:  #99f1ed;
+  --pagination-background-color: lightgrey;
+
+
+
 
 
 

@@ -56,7 +56,7 @@ export const About: React.FC = () => {
           </CardWrapper>
           <BtnWrapper>
             <StyledLink href={`/about`}>
-              <Primary text="Kontakta oss" />
+              <Primary text="Läs mer om oss" />
             </StyledLink>
           </BtnWrapper>
         </CardBtnWrapper>
