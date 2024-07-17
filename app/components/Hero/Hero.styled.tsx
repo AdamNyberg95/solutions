@@ -69,7 +69,7 @@ export const TypographyBigThin = styled.h4`
   font-size: 20px;
   font-weight: 200;
   line-height: 1.5;
-  margin-left: 10px;
+  margin-left: 0px;
 `;
 
 export const BtnWrapper = styled.div`

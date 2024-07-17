@@ -18,6 +18,7 @@ const LogoImage = styled.img`
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  filter: grayscale(100%);
 `;
 
 const Logo: React.FC<LogoProps> = ({ src, alt }) => {

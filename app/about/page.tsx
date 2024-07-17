@@ -60,7 +60,7 @@ const About: React.FC = () => {
               src={'/adam.jpeg'}
               alt={'profileImg'}
               width={350}
-              height={400}
+              height={350}
             ></StyledImage>
             <TextWrapper>
               <CardTitle>Adam Nyberg</CardTitle>
@@ -119,7 +119,7 @@ const About: React.FC = () => {
               src={'/Sara-2.jpg'}
               alt={'profileImg'}
               width={350}
-              height={420}
+              height={350}
             ></StyledImage>
           </Card>
         </CardWrapper>

@@ -11,13 +11,12 @@ export const StyledSection = styled.section`
 export const Card = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 50px 50px;
+  padding: 50px 30px;
 `;
 
 export const CardWrapper = styled.div`
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 `;
 
@@ -79,7 +78,5 @@ export const CompetenceBorder = styled.div`
 `;
 
 export const StyledImage = styled(Image)`
-  width: 350px;
-  height: 440px;
   border-radius: 6px;
 `;
