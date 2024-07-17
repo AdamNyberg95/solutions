@@ -3,19 +3,15 @@
 import React from 'react';
 import {
   ColorSpan,
-  BtnPrimaryBig,
   BtnText,
-  BtnTypography,
   BtnWrapper,
   Container,
   H2,
   TextBox,
   TypographyBigThin,
   TypographySmall,
-  StyledArrowIcon,
   StyledIconBtnText,
 } from './Hero.styled';
-import { BtnPrimary } from '../Header/Header.styled';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Primary from '@/src/components/Button/Primary/Primary';
@@ -52,15 +48,35 @@ export const Hero: React.FC = () => {
           ))}
         </TypographyBigThin>
         <BtnText>
-          <Link href={`/about`}>
-            <TypographySmall> Läs mer om oss </TypographySmall>
-          </Link>
-
-          <StyledIconBtnText size={25} />
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0 }}
+          >
+            <Link
+              href={`/about`}
+              style={{ display: 'flex', alignItems: 'center' }}
+            >
+              <TypographySmall> Läs mer om oss </TypographySmall>
+              <StyledIconBtnText size={25} />
+            </Link>
+          </motion.div>
         </BtnText>
         <BtnWrapper>
-          <Primary text="Kontakta oss" />
-          <Primary text="Våra tjänster" />
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0 }}
+          >
+            <Primary text="Kontakta oss" />
+          </motion.div>
+          <motion.div
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0 }}
+          >
+            <Primary text="Våra tjänster" />
+          </motion.div>
         </BtnWrapper>
       </TextBox>
     </Container>

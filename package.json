@@ -19,7 +19,8 @@
     "react-icons": "^5.2.1",
     "resend": "^3.4.0",
     "sharp": "^0.33.4",
-    "styled-components": "^6.1.11"
+    "styled-components": "^6.1.11",
+    "swiper": "^11.1.5"
   },
   "devDependencies": {
     "@types/node": "^20",

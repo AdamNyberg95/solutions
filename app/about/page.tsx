@@ -49,7 +49,7 @@ const About: React.FC = () => {
     <>
       <StyledSection>
         <TitleWrapper>
-          <H1>SA Solutions</H1>
+          <h1>Om oss</h1>
           <H2>Vi är SA Solutions</H2>
           <TypographyBigThin dangerouslySetInnerHTML={{ __html: text }} />
         </TitleWrapper>

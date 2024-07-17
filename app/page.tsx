@@ -6,7 +6,7 @@ import { About } from './components/About/About';
 import { Popup } from './components/popup/Popup';
 import Services from './components/Services/Services';
 import LogoSlider from './components/LogoSlider/LogoSlider';
-import EmailForm from './components/EmailForm/EmailForm';
+import Slider from './components/Slider/Slider';
 
 const Home: React.FC = () => {
   const [showPopup, setShowPopup] = useState(false);
@@ -37,6 +37,7 @@ const Home: React.FC = () => {
       <LogoSlider />
       <Services />
       <About />
+      <Slider />
     </main>
   );
 };

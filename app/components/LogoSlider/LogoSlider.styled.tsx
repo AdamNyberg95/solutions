@@ -9,6 +9,20 @@ const moveLeft = keyframes`
   }
 `;
 
+const LogoWrapper = styled.div`
+  width: 100px; /* Adjust the size as needed */
+  height: 50px; /* Adjust the size as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const LogoImage = styled.img`
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+`;
+
 export const LogoSliderWrapper = styled.div`
   display: flex;
   align-items: center;
