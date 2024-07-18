@@ -1,36 +1,39 @@
 import React from 'react';
-import { StyledActiveText, StyledActiveTitle, StyledContainer, StyledLine, Text } from './ActiveText.styled';
+import { Box, StyledActiveText, StyledActiveTitle, StyledContainer, StyledKeywords, StyledLine, Text } from './ActiveText.styled';
 
 type ActiveTextProps = {
   text: string;
   activeTitle: string;
   activeText: string;
+  keywords: string[]; 
 };
 
-const ActiveText: React.FC<ActiveTextProps> = ({ activeText , activeTitle }) => {
+const ActiveText: React.FC<ActiveTextProps> = ({ activeText , activeTitle, keywords }) => {
   return (
     <StyledContainer>
-      <div
-        style={{ display: 'flex', justifyContent: 'flex-start', width: '85%' }}
+      <Box
+
       >
       <StyledActiveTitle> {activeTitle} </StyledActiveTitle> 
-      </div>
+      </Box>
 
-      <div
-        style={{ display: 'flex', justifyContent: 'flex-start', width: '85%', marginTop: '-30px' }}
+      <Box
+        style={{  marginTop: '-30px' }}
       >
        <StyledActiveText>  {activeText}  </StyledActiveText> 
-      </div>
+      </Box>
 
-      <div
-        style={{ display: 'flex', justifyContent: 'flex-start', width: '85%', marginTop: '-30px' }}
+      <Box
+        style={{ marginTop: '-30px' }}
       >
-       <Text>Responsiv design</Text>
-       <Text>Tillgänglighet</Text>
-       <Text>Tillgänglighet</Text>
+       
+        {keywords.map((keyword, index) => (
+          <StyledKeywords key={index}>{keyword}</StyledKeywords>
+        ))}
+     
 
 
-      </div>
+      </Box>
 
       
     

@@ -5,8 +5,7 @@ import { StyledDiv, StyledSection } from './Services.styled';
 import ServiceItem from '@/app/vara-tjanster/components/ServiceItem/ServiceItem';
 import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
 import Link from 'next/link';
-import { H2, TypographyBigThin } from '../Hero/Hero.styled';
-import { TitleWrapper } from '../About/About.styled';
+import { H2} from '../Hero/Hero.styled';
 
 const Services: React.FC = () => {
   return (
@@ -19,8 +18,8 @@ const Services: React.FC = () => {
         }}
       >
 
-        <H2 style={{marginBottom: '60px'}}>Vi vill vara din digitala partner - </H2>
-        <H2 style={{marginBottom: '70px', fontWeight: '200', marginLeft: '6px'}}>vi erbjuder heltäckande skärddarsydda webblösningar</H2>
+        <H2 style={{marginBottom: '60px'}}>SA Solutions vill vara din digitala partner - </H2>
+        <H2 style={{marginBottom: '70px', fontWeight: '200', marginLeft: '6px'}}>vi erbjuder heltäckande skräddarsydda lösningar</H2>
 
       </Link>
       <StyledDiv>
