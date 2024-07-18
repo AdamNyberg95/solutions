@@ -5,6 +5,8 @@ import { StyledDiv, StyledSection, StyledToggle } from './page.styled';
 import ServiceItem from './components/ServiceItem/ServiceItem';
 import ActiveText from './components/ActiveText/ActiveText'; // Adjust the import path as needed
 import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
+import { TitleWrapper } from '../components/About/About.styled';
+import { H2, TypographyBigThin } from '../components/Hero/Hero.styled';
 
 // Define a type for the service
 type Service = {
@@ -43,6 +45,7 @@ const services: Service[] = [
 
   },
 ];
+const introText = 'Som din digitala partner tänker vi ur ett helhetsperspektiv. Vi kombinerar den bästa tekniken för ditt företag med en design som utstrålar ditt varumärke. Våra heltäckande digitala tjänster, kan få ditt företag att växa!     ';
 
 const Service: React.FC = () => {
   // Initialize state for the active service with the first service in the array
@@ -55,7 +58,12 @@ const Service: React.FC = () => {
 
   return (
     <StyledSection>
+        <TitleWrapper>
       <h1>Våra tjänster</h1>
+      <H2>Vi erbjuder heltäckande skräddarsydda webblösningar</H2>
+      <TypographyBigThin dangerouslySetInnerHTML={{ __html: introText }} />
+      </TitleWrapper>
+
       <StyledDiv>
         <StyledToggle>
           {services.map((service, index) => (
