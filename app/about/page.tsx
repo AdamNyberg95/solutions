@@ -44,6 +44,7 @@ const About: React.FC = () => {
     'HTML',
     'CSS',
     'UX/UI',
+    'Figma',
   ];
   const competenceListAdam = ['React JS', 'Backend'];
 
