@@ -29,6 +29,8 @@ export const StyledImage = styled.img`
   width: 300px;
   height: 300px;
   border-radius: 6px;
+  cursor: none;
+  z-index: 1;
 `;
 
 export const CardTextWrapper = styled.div`
@@ -60,7 +62,6 @@ export const CardBtnWrapper = styled.div`
 `;
 
 export const BtnWrapper = styled.div`
-  margin: 20px 20px;
 `;
 
 export const StyledLink = styled(Link)`
