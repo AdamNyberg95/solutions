@@ -32,7 +32,7 @@ export const Popup = ({ togglePopup }: Popup) => {
             </TypographySmall>
             <TypographySmallThin style={{ marginTop: '-10px' }}>
               {' '}
-              Våra fem första kunder får kanon erbjudandet. Hör av dig nu!
+              Våra fem första kunder får kanon-erbjudandet. Hör av dig nu!
             </TypographySmallThin>
             <Primary text="Kontakta oss" />
           </TextWrapper>
