@@ -19,7 +19,7 @@ const Services: React.FC = () => {
       >
 
         <H2 style={{marginBottom: '60px'}}>SA Solutions vill vara din digitala partner - </H2>
-        <H2 style={{marginBottom: '70px', fontWeight: '200', marginLeft: '6px'}}>vi erbjuder heltäckande skräddarsydda lösningar</H2>
+        <H2 style={{marginBottom: '70px', fontWeight: '200', marginLeft: '6px'}}>vi erbjuder dig heltäckande skräddarsydda lösningar</H2>
 
       </Link>
       <StyledDiv>
