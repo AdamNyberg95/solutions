@@ -34,9 +34,7 @@ export const Wrapper = styled.nav<ScrollProps>`
   justify-content: center;
   transition: all 0.3s ease-out;
   background: ${({ isScrolled }) =>
-    isScrolled
-      ? 'var(--header-scroll-background)'
-      : 'transparent'};
+    isScrolled ? 'var(--header-scroll-background)' : 'transparent'};
 `;
 
 export const NavList = styled.ul`
@@ -62,12 +60,12 @@ export const Logga = styled.div`
   align-items: center;
 `;
 
-export const NavLinks = styled.li`
+export const NavLinks = styled.li<{ isActive: boolean }>`
   display: flex;
   align-items: center;
   padding: 10px;
   font-size: 16px;
-
+  opacity: ${({ isActive }) => (isActive ? '1' : '0.5')};
   a {
     text-decoration: none;
     color: inherit;

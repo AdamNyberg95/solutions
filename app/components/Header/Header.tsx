@@ -11,7 +11,7 @@ import {
 } from './Header.styled';
 import blackLoggo from '../../assets/icons/blackLoggo.png';
 import whiteLoggo from '../../assets/icons/whiteLoggo.png';
-
+import { useRouter, usePathname } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const controls = useAnimation();
   const { theme } = useTheme();
-
+  const pathname = usePathname();
   const links = [
     { display: 'Våra tjänster', path: 'vara-tjanster' },
     { display: 'Om oss', path: 'about' },
@@ -59,7 +59,7 @@ export const Header: React.FC = () => {
               </Link>
             </Logga>
             {links.map((link, index) => (
-              <NavLinks key={index}>
+              <NavLinks key={index} isActive={pathname === `/${link.path}`}>
                 <Link href={`/${link.path}`}>{link.display}</Link>
               </NavLinks>
             ))}
