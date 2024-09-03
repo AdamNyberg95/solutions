@@ -19,11 +19,11 @@ export const StyledContainer = styled.div`
   padding: 20px 0px;
 `;
 
-export const StyledLine = styled.div`
-  width: 100%;
-  height: 1px;
-  background-color: #ccc; /* Adjust color as needed */
-  margin: 10px 0; /* Adjust margin as needed */
+export const Box = styled.div`
+display: flex;
+justify-content: flex-start;
+flex-wrap: wrap;
+width: 85%;
 `;
 
 export const StyledActiveTitle = styled.p`
@@ -40,12 +40,13 @@ margin-left: 8px;
 width: 96%;
 `;
 
-export const Text = styled.p`
+export const StyledKeywords = styled.p`
 color: #99f1ed;
 font-size: 16px;
 border: 1px solid #99f1ed;
 border-radius: 30px;
 padding: 8px 8px;
-
-
+margin-right: 5px;
+line-height: 1;
+margin-bottom: -3px;
 `;

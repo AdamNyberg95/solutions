@@ -5,6 +5,8 @@ import { StyledDiv, StyledSection, StyledToggle } from './page.styled';
 import ServiceItem from './components/ServiceItem/ServiceItem';
 import ActiveText from './components/ActiveText/ActiveText'; // Adjust the import path as needed
 import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
+import { TitleWrapper } from '../components/About/About.styled';
+import { H2, TypographyBigThin } from '../components/Hero/Hero.styled';
 
 // Define a type for the service
 type Service = {
@@ -13,6 +15,7 @@ type Service = {
   activeTitle: string;
   text: string;
   activeText: string;
+  keywords: string[];
 };
 
 const services: Service[] = [
@@ -22,8 +25,7 @@ const services: Service[] = [
     activeTitle: 'Vi är experter på Webbutveckling',
     text: 'Vi skapar smarta och moderna weblösningar för ditt företag.',
     activeText: 'Vi kan både frontend- och backend utveckling. Vi vill vara din partner oavsett om du vill ha en enkel hemsidan eller en mer komplex webb-lösning.',
-
-
+    keywords: ['Frontend', 'Backend', 'Tillgänglighet/WCAG', 'Säkerhet', 'Underhåll', 'Support'], 
 
   },
   {
@@ -32,6 +34,7 @@ const services: Service[] = [
     activeTitle: 'Användarupplevelsen och ditt varumärke är A och O',
     text: 'Vi hjälper dig ta fram den bästa användarupplevelsen där ditt varukmärke är i centrum.',
     activeText: 'Vi förstår att en snabb webbplats med rätt gränssnitt och en design som speglar ditt varumärke är avgörande för ditt företags framgång.',
+    keywords: ['Skräddarsytt', 'Wierframing', 'Prototyping', 'Responsivitet', 'UX/UI granskning', 'Content'], 
 
   },
   {
@@ -40,9 +43,10 @@ const services: Service[] = [
     activeTitle: 'Vi kan hjälpa ditt företag att växa',
     text: 'Vi tänker på analys och sökoptimering och vill hjälpa ditt företag växa.',
     activeText: 'Vi trendspanar och analysera vad som fungerar och inte fungrar för dina kunder. Vi ser till att sökoptimera din webb. På så sätt kan vi hjälpa ditt företag nå nya höjder!',
-
+    keywords: ['Researching', 'Avändar-analys', 'SEO-analys', 'Strategi', 'Planering'], 
   },
 ];
+const introText = 'Som din digitala partner tänker vi ur ett helhetsperspektiv. Vi kombinerar den bästa tekniken för ditt företag med en design som utstrålar ditt varumärke. Våra heltäckande digitala tjänster, kan få ditt företag att växa!     ';
 
 const Service: React.FC = () => {
   // Initialize state for the active service with the first service in the array
@@ -55,7 +59,12 @@ const Service: React.FC = () => {
 
   return (
     <StyledSection>
+        <TitleWrapper>
       <h1>Våra tjänster</h1>
+      <H2>Vi erbjuder heltäckande skräddarsydda lösningar</H2>
+      <TypographyBigThin dangerouslySetInnerHTML={{ __html: introText }} />
+      </TitleWrapper>
+
       <StyledDiv>
         <StyledToggle>
           {services.map((service, index) => (
@@ -66,10 +75,11 @@ const Service: React.FC = () => {
               text={service.text}
               onClick={() => handleServiceClick(service)}
               isActive={service.title === activeService.title} // Pass isActive prop
+              
             />
           ))}
         </StyledToggle>
-        {activeService && <ActiveText activeText={activeService.activeText} text={''} activeTitle={activeService.activeTitle} />}
+        {activeService && <ActiveText activeText={activeService.activeText} text={''} activeTitle={activeService.activeTitle} keywords={activeService.keywords}/>}
       </StyledDiv>
     </StyledSection>
   );

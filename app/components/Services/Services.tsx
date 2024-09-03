@@ -5,7 +5,11 @@ import { StyledDiv, StyledSection } from './Services.styled';
 import ServiceItem from '@/app/vara-tjanster/components/ServiceItem/ServiceItem';
 import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
 import Link from 'next/link';
+<<<<<<< HEAD
 import { motion, useInView, useAnimation } from 'framer-motion';
+=======
+import { H2} from '../Hero/Hero.styled';
+>>>>>>> 4ba9a821cc6ffcfc8bb4b4d63400b1b19f181604
 
 const Services: React.FC = () => {
   const controls = useAnimation();
@@ -19,6 +23,7 @@ const Services: React.FC = () => {
   }, [controls, inView]);
 
   return (
+<<<<<<< HEAD
     <motion.div
       ref={ref}
       initial={{ y: 50, opacity: 0 }}
@@ -26,6 +31,22 @@ const Services: React.FC = () => {
       transition={{ duration: 0.5, delay: 0.5 }} // Adding a delay of 0.5 seconds
     >
       <StyledSection>
+=======
+    <StyledSection>
+      <Link
+        href={`/`}
+        style={{
+          textDecoration: 'none',
+          color: 'var(--text-color)',
+        }}
+      >
+
+        <H2 style={{marginBottom: '60px'}}>SA Solutions vill vara din digitala partner - </H2>
+        <H2 style={{marginBottom: '70px', fontWeight: '200', marginLeft: '6px'}}>vi erbjuder dig heltäckande skräddarsydda lösningar</H2>
+
+      </Link>
+      <StyledDiv>
+>>>>>>> 4ba9a821cc6ffcfc8bb4b4d63400b1b19f181604
         <Link
           href={`/`}
           style={{

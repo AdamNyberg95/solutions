@@ -19,7 +19,7 @@ import H1 from '@/src/components/Typography/H1';
 
 export const Hero: React.FC = () => {
   const text =
-    'SA Solutions erbjuder skärddarsydda digitala lösningar för din web. Ser du behov av en hemsida till ditt företag, behöver din hemsida uppdateras eller vill du hitta andra digitala lösningar för ditt företag? Då tror vi att vi är rätt partner för dig!'.split(
+    'SA Solutions erbjuder skärddarsydda digitala lösningar för din webb. Ser du behov av en hemsida till ditt företag, behöver din hemsida uppdateras eller vill du hitta andra digitala lösningar för ditt företag? Då tror vi att vi är rätt partner för dig!'.split(
       ' '
     );
 

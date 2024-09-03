@@ -11,7 +11,6 @@ export const StyledSection = styled.section`
 export const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 00px 30px;
 `;
 
 export const CardWrapper = styled.div`
@@ -29,6 +28,8 @@ export const StyledImage = styled.img`
   width: 300px;
   height: 300px;
   border-radius: 6px;
+  cursor: none;
+  z-index: 1;
 `;
 
 export const CardTextWrapper = styled.div`
@@ -60,7 +61,6 @@ export const CardBtnWrapper = styled.div`
 `;
 
 export const BtnWrapper = styled.div`
-  margin: 20px 20px;
 `;
 
 export const StyledLink = styled(Link)`

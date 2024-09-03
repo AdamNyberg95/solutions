@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({ text, href = '#' }) => {
       {splittedText.map((word, index) => (
         <div
           key={index}
-          style={{ display: 'inline-block', whiteSpace: 'nowrap' }}
+          style={{ display: 'inline-block', whiteSpace: 'nowrap', color:  'var(--text-blackdarkmode-whitelightmode)' }}
         >
           {word.split('').map((char, index) => (
             <i key={index}>{char}</i>

@@ -9,6 +9,7 @@ export const StyledDiv = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
+  padding: 50px 30px;
 `;
 export const StyledToggle = styled.div`
   display: grid;

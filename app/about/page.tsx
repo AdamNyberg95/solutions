@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import {
   Border,
   Card,
@@ -27,13 +27,15 @@ import {
   BtnPrimarySmall,
   BtnSmallTypography,
 } from '../components/Header/Header.styled';
-import H1 from '@/src/components/Typography/H1';
 
 const About: React.FC = () => {
+  const adamSectionRef = useRef<HTMLDivElement>(null);
+  const saraSectionRef = useRef<HTMLDivElement>(null);
+
   const text =
     'SA Solutions är ett nystartat web-solution bolag, vars syfte är att hjälpa företag skapa digitala lösningar. Vår vision är att tillsammans med företag se till så deras digitala lösningar hänger med i dagens teknologi. SA Solutions är belägna i Stockholm och på Åland. <br></br> Vi som står bakom SA Solutions är två utvecklare som båda brinner för att skapa den bästa weblösningen för ditt företag. Med vår tidigare efarenhet av utveckling tror vi att vi kan hjälpa ditt företag att hålla sig i upto-date med dagens tekonlogi.';
   const textSara =
-    'Jag är en Frontend utvecklare med passion för UX/UI design. Jag har tidigare varit intern på tech partnern Qte development där jag varit del av flera spännande projekt, bland annat har jag haft eget ansvar över frontend delen av en adminnplattfor tillhörande en applikation för en hårtransplantaions klinik. <br></br> Jag tog examen som frontend utvecklare juni 2024 och är nu super pepp på att börja hjälpa företag vara upto-date med dagens tekonologi.';
+    'Jag är en Frontend utvecklare med passion för UX/UI design. Jag har tidigare varit intern på tech partnern Qte development där jag varit del av flera spännande projekt, bland annat har jag haft eget ansvar över frontend delen av en adminplattform tillhörande en applikation för en hårtransplantaions klinik. <br></br> Jag tog examen som frontend utvecklare juni 2024 och är nu super-pepp på att börja hjälpa företag att vara upto-date med dagens tekonologi.';
   const competenceListSara = [
     'React JS',
     'TypeScript',
@@ -42,12 +44,46 @@ const About: React.FC = () => {
     'HTML',
     'CSS',
     'UX/UI',
+    'Figma',
   ];
   const competenceListAdam = ['React JS', 'Backend'];
 
+
+  useEffect(() => {
+    const hash = window.location.hash.substr(1);
+    let yOffset = -65;
+
+    switch (hash) {
+      case "adamSection":
+        scrollToSection(adamSectionRef, yOffset);
+        break;
+      case "saraSection":
+        scrollToSection(saraSectionRef, yOffset);
+      default:
+        break;
+    }
+  }, []);
+
+  const scrollToSection = (
+    ref: React.RefObject<HTMLDivElement>,
+    yOffset: number,
+  ) => {
+    if (ref.current) {
+      const y =
+        ref.current.getBoundingClientRect().top + window.scrollY + yOffset;
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  }; 
+  
+
+
+
+
+
+ 
   return (
     <>
-      <StyledSection>
+      <StyledSection id='about'>
         <TitleWrapper>
           <h1>Om oss</h1>
           <H2>Vi är SA Solutions</H2>
@@ -55,7 +91,7 @@ const About: React.FC = () => {
         </TitleWrapper>
 
         <CardWrapper>
-          <Card>
+          <Card ref={adamSectionRef} id='adamSection' >
             <StyledImage
               src={'/adam.jpeg'}
               alt={'profileImg'}
@@ -84,7 +120,7 @@ const About: React.FC = () => {
             </TextWrapper>
           </Card>
 
-          <Card>
+          <Card ref={saraSectionRef} id='saraSection'>
             <TextWrapper>
               <CardTitle>Sara Södergård</CardTitle>
               <UnderTitle>Coding since, February 2022</UnderTitle>
