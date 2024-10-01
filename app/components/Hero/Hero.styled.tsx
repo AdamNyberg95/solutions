@@ -112,7 +112,7 @@ export const BtnPrimaryBig = styled.button`
 `;
 
 export const StyledArrowIcon = styled(IoIosArrowRoundForward)`
-  color: var(--text-blackdarkmode-whitelightmode);
+  color: white;
 `;
 
 export const StyledIconBtnText = styled(IoIosArrowRoundForward)`

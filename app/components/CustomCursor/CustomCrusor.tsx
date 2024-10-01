@@ -11,7 +11,7 @@ interface CursorProps {
 const CustomCursor: React.FC<CursorProps> = ({ x, y , text}) => {
     return(
         <Cursor style={{ left: `${x}px`, top: `${y}px`, display: x === 0 && y === 0 ? 'none' : 'block' }}>
-        <Wrapper> {text}<StyledArrowIcon size={18} /> </Wrapper>
+        <Wrapper> {text}<StyledArrowIcon  size={18} /> </Wrapper>
       </Cursor>
     )
 }

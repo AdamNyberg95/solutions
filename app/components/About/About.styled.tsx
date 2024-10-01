@@ -60,8 +60,7 @@ export const CardBtnWrapper = styled.div`
   align-items: center;
 `;
 
-export const BtnWrapper = styled.div`
-`;
+
 
 export const StyledLink = styled(Link)`
   text-decoration: none;

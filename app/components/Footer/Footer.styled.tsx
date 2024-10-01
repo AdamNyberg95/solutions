@@ -36,6 +36,7 @@ width: 100vw;
 export const TextFooter = styled.p`
 color: var(--text-blackdarkmode-whitelightmode);
 font-size: 30px;
+font-weight: 300;
 `;
 
 export const Box = styled.div`
@@ -132,6 +133,7 @@ font-weight: 200;
 export const StyledImage = styled.img`
 width: 72px;
 height: 80px;
+border-radius: 6px;
 
 `;
 

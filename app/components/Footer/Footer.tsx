@@ -42,7 +42,7 @@ export const Footer: React.FC = () => {
                 src={'./Sara-2.jpg'} alt="profile-img"  
                 ></StyledImage>
                 <TextWrapper>
-                  <Typography style={{marginBottom: '8px'}}>Sara@sasolutions.com</Typography>
+                  <Typography style={{marginBottom: '8px'}}>sodergardsara@gmail.com</Typography>
                   <Typography style={{ fontWeight: '200' }}>
                     +46 763437347
                   </Typography>
