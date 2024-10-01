@@ -39,7 +39,7 @@ const Services: React.FC = () => {
           </H2>
           <H2 fontWeight="200" color={'var(--text-color)'}
             style={{
-              marginBottom: '70px',
+              marginBottom: '45px',
               marginLeft: '6px',
             }}
           >
@@ -53,7 +53,7 @@ const Services: React.FC = () => {
             color: 'var(--text-color)',
           }}
         >
-          <h1>Våra tjänster</h1>
+          <h1 >Våra tjänster</h1>
         </Link>
         <StyledDiv>
           <Link

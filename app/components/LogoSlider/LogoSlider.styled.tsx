@@ -28,7 +28,6 @@ export const LogoSliderWrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 50px;
-  overflow-x: hidden;
   z-index: 1;
 `;
 

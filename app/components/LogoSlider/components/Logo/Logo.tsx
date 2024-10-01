@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 import styled from 'styled-components';
 
+
 interface LogoProps {
-  src: string;
+  src?: string;
   alt: string;
+  icon?: ReactNode;
+
 }
 
 const LogoWrapper = styled.div`
@@ -21,10 +24,14 @@ const LogoImage = styled.img`
   filter: grayscale(100%);
 `;
 
-const Logo: React.FC<LogoProps> = ({ src, alt }) => {
+const Logo: React.FC<LogoProps> = ({ src, alt, icon}) => {
   return (
     <LogoWrapper>
-      <LogoImage src={src} alt={alt} />
+        {src ? (
+        <LogoImage src={src} alt={alt} /> // If 'src' is provided, render the image
+      ) : (
+        <div aria-label={alt}>{icon}</div> // If 'icon' is provided, render the icon
+      )}
     </LogoWrapper>
   );
 };
