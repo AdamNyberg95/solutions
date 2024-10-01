@@ -5,9 +5,10 @@ import { StyledButton } from './Primary.styled';
 interface ButtonProps {
   text: string;
   href?: string;
+  color?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ text, href = '#' }) => {
+const Button: React.FC<ButtonProps> = ({ text, href = '#', color }) => {
   const splittedText = text.split(' ');
 
   return (
