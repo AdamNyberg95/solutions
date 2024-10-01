@@ -16,6 +16,7 @@ import { motion } from 'framer-motion';
 import Primary from '@/src/components/Button/Primary/Primary';
 import H1 from '@/src/components/Typography/H1';
 import H2 from '@/src/components/Typography/H2';
+import { StyledLink } from '../About/About.styled';
 
 
 export const Hero: React.FC = () => {
@@ -69,14 +70,20 @@ export const Hero: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }}
           >
+                 <StyledLink href={`/contact`}>
+
             <Primary text="Kontakta oss" />
+            </StyledLink>
+
           </motion.div>
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }}
           >
+                 <StyledLink href={`/vara-tjanster`}>
             <Primary text="Våra tjänster" />
+            </StyledLink>
           </motion.div>
         </BtnWrapper>
       </TextBox>

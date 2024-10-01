@@ -13,6 +13,7 @@ import { IoIosClose } from 'react-icons/io';
 import { BtnPrimarySmall, BtnSmallTypography } from '../Header/Header.styled';
 import { ColorSpan, StyledArrowIcon } from '../Hero/Hero.styled';
 import Primary from '@/src/components/Button/Primary/Primary';
+import { StyledLink } from '../About/About.styled';
 type Popup = {
   togglePopup: (event: React.MouseEvent<HTMLElement>) => void;
 };
@@ -34,7 +35,9 @@ export const Popup = ({ togglePopup }: Popup) => {
               {' '}
               Våra fem första kunder får kanon-erbjudandet. Hör av dig nu!
             </TypographySmallThin>
+            <StyledLink href={`/contact`}>
             <Primary text="Kontakta oss" />
+            </StyledLink>
           </TextWrapper>
         </PopupCard>
       </Overlay>

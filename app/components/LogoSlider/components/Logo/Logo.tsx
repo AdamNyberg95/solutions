@@ -10,8 +10,8 @@ interface LogoProps {
 }
 
 const LogoWrapper = styled.div`
-  width: 100px; /* Adjust the size as needed */
-  height: 35px; /* Adjust the size as needed */
+  width: 100px; 
+  height: 35px; 
   display: flex;
   justify-content: center;
   align-items: center;
