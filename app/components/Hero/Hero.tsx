@@ -6,7 +6,6 @@ import {
   BtnText,
   BtnWrapper,
   Container,
-  H2,
   TextBox,
   TypographyBigThin,
   TypographySmall,
@@ -16,6 +15,8 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Primary from '@/src/components/Button/Primary/Primary';
 import H1 from '@/src/components/Typography/H1';
+import H2 from '@/src/components/Typography/H2';
+
 
 export const Hero: React.FC = () => {
   const text =
@@ -29,7 +30,7 @@ export const Hero: React.FC = () => {
         <H1 color={'var(--blue-color)'} fontSize={'72px'} fontWeight="300">
           SA Solutions
         </H1>
-        <H2>
+        <H2 color={'var(--text-color)'}fontSize={'45px'} fontWeight="300">
           Your solution for <ColorSpan>your</ColorSpan> web
         </H2>
         <TypographyBigThin>

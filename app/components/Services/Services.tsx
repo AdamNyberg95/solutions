@@ -6,6 +6,7 @@ import ServiceItem from '@/app/vara-tjanster/components/ServiceItem/ServiceItem'
 import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
 import Link from 'next/link';
 import { motion, useInView, useAnimation } from 'framer-motion';
+import H2 from '@/src/components/Typography/H2';
 
 const Services: React.FC = () => {
   const controls = useAnimation();
@@ -33,18 +34,17 @@ const Services: React.FC = () => {
             color: 'var(--text-color)',
           }}
         >
-          <h2 style={{ marginBottom: '60px' }}>
+          <H2 color={'var(--text-color)'}fontSize={'45px'} fontWeight="300" style={{ marginBottom: '12px' }}>
             SA Solutions vill vara din digitala partner -{' '}
-          </h2>
-          <h2
+          </H2>
+          <H2 fontWeight="200" color={'var(--text-color)'}
             style={{
               marginBottom: '70px',
-              fontWeight: '200',
               marginLeft: '6px',
             }}
           >
             vi erbjuder dig heltäckande skräddarsydda lösningar
-          </h2>
+          </H2>
         </Link>
         <Link
           href={`/`}

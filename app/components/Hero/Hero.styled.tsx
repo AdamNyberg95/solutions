@@ -47,12 +47,6 @@ export const TextBox = styled.div`
   max-width: 1200px;
 `;
 
-export const H1 = styled.h1`
-  font-size: 72px;
-  font-weight: 300;
-  line-height: 0px;
-  color: var(--blue-color);
-`;
 
 export const H2 = styled.h2`
   font-size: 45px;

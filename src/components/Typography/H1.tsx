@@ -9,7 +9,7 @@ interface H1Props {
 
 const H1 = styled.h1<H1Props>`
   color: ${({ color }) => color || '#333'};
-  font-weight: ${({ fontWeight }) => fontWeight || 'bold'};
+  font-weight: ${({ fontWeight }) => fontWeight || 'normal' };
   font-size: ${({ fontSize }) => fontSize || '2.5rem'};
   margin: ${({ margin }) => margin || '0 0 1rem'};
 `;
