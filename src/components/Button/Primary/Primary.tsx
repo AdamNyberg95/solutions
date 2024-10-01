@@ -5,10 +5,9 @@ import { StyledButton } from './Primary.styled';
 interface ButtonProps {
   text: string;
   href?: string;
-  color?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ text, href = '#', color }) => {
+const Button: React.FC<ButtonProps> = ({ text, href = '#' }) => {
   const splittedText = text.split(' ');
 
   return (
@@ -24,7 +23,7 @@ const Button: React.FC<ButtonProps> = ({ text, href = '#', color }) => {
         </div>
       ))}
       <i style={{ lineHeight: '0', display: 'flex', alignItems: 'center' }}>
-        <StyledArrowIcon size={18} />
+        <StyledArrowIcon color={'var(--text-blackdarkmode-whitelightmode)'} size={18} />
       </i>
     </StyledButton>
   );

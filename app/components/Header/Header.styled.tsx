@@ -100,6 +100,16 @@ export const BtnPrimarySmall = styled.button`
   background-color: var(--btn-background-color);
   border-color: white;
   cursor: pointer;
+
+  &:hover {
+    background-color: var(--btn-hover-color);
+    &:after {
+      top: 0;
+    }
+    i {
+      transform: translateY(0); /* Reset translateY */
+    }
+  }
 `;
 
 export const BtnSmallTypography = styled.p`

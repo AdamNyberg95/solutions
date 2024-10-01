@@ -17,7 +17,7 @@ import {
   StyledImage,
   UnderUnderTitle,
 } from './page.styled';
-import { TitleWrapper } from '../components/About/About.styled';
+import { StyledLink, TitleWrapper } from '../components/About/About.styled';
 import {
   H2,
   StyledArrowIcon,
@@ -74,12 +74,6 @@ const About: React.FC = () => {
       window.scrollTo({ top: y, behavior: "smooth" });
     }
   }; 
-  
-
-
-
-
-
  
   return (
     <>
@@ -136,10 +130,15 @@ const About: React.FC = () => {
                   {' '}
                   Kolla in min portfolio för att ta del av mina tidigare projekt{' '}
                 </Text>
+                <StyledLink href="https://portfolio-sarasodergard.vercel.app/" target="_blank" rel="noopener noreferrer">
                 <BtnPrimarySmall style={{ marginLeft: '10px' }}>
-                  <BtnSmallTypography>Saras portfolio </BtnSmallTypography>
-                  <StyledArrowIcon size={23} />
+            
+                  <BtnSmallTypography>Saras portfolio</BtnSmallTypography>
+
+
+                  <StyledArrowIcon  color={'var(--text-blackdarkmode-whitelightmode)'}  size={23} />
                 </BtnPrimarySmall>
+                </StyledLink>
               </TextWithBtnWrapper>
               <Border />
               <Title2>Kompetenser</Title2>
