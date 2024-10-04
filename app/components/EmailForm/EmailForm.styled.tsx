@@ -5,7 +5,7 @@ export const FormContainer = styled.form`
   flex-direction: column;
   width: 450px;
 
-  textarea{
+  textarea {
     margin-bottom: 15px;
     padding: 15px;
     font-size: 16px;
@@ -13,8 +13,7 @@ export const FormContainer = styled.form`
     height: 100px;
     border: 1px solid grey;
     font-family: inherit;
-    background-color: transparent; 
-
+    background-color: transparent;
   }
 
   input[type='submit'] {
@@ -33,24 +32,22 @@ export const FormContainer = styled.form`
   input[type='email'],
   input[type='password'] {
     border: none;
-    border-bottom: 1px solid var(--form-border-color); 
+    border-bottom: 1px solid var(--form-border-color);
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 10px 2px;
-    background-color: transparent; 
-
- 
+    background-color: transparent;
   }
 
-  input::placeholder{
-    color: var(--text-color-form); 
+  input::placeholder {
+    color: var(--text-color-form);
     font-weight: 200;
     font-style: inherit;
     font-size: 18px;
     margin-bottom: 15px;
   }
 
-  label{
+  label {
     margin-top: 10px;
     margin-bottom: 10px;
     font-size: 18px;
@@ -58,7 +55,7 @@ export const FormContainer = styled.form`
   }
 
   textarea::placeholder {
-    color: grey; 
+    color: grey;
     font-style: inherit;
   }
 
@@ -70,5 +67,9 @@ export const FormContainer = styled.form`
   input:focus,
   textarea:focus {
     outline: none;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
