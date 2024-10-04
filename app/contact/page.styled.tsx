@@ -7,41 +7,41 @@ export const StyledSection = styled.section`
 `;
 
 export const TextWrapper = styled.div`
-width: 50%;
+  width: 50%;
 `;
 
 export const Wrapper = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const TextAndFormWrapper = styled.div`
-display: flex;
-flex-direction: row;
-padding: 0px 30px;
+  display: flex;
+  flex-direction: row;
+  padding: 0px 0px;
 `;
 
 export const EmailFormWrapper = styled.div`
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 `;
 
 export const ContactBox = styled.div`
-display: flex;
-flex-direction: row;
-margin-left: 3px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 3px;
 `;
 
 export const InsideBox = styled.div`
-display: flex;
-flex-direction: column;
-padding: 10px 0px;
-margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  margin-right: 50px;
 `;
 
 export const Typography = styled.p`
-font-size: 16px;
-color: var(--text-color);
-font-weight: 200;
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: 200;
 `;

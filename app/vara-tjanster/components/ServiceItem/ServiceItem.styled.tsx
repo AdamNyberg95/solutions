@@ -18,6 +18,9 @@ export const ItemContainer = styled.div<{ isActive: boolean }>`
     transform: translateY(-2px);
     box-shadow: 0 2px 4px #99f1ed;
   }
+  @media (max-width: 768px) {
+    padding: 10px 20px;
+  }
 `;
 
 export const IconContainer = styled.div`
@@ -29,7 +32,6 @@ export const IconContainer = styled.div`
 export const Title = styled.h2`
   font-size: 18px;
   color: white;
-
 `;
 
 export const Text = styled.p`

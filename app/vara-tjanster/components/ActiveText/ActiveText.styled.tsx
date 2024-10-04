@@ -13,40 +13,45 @@ export const StyledContainer = styled.div`
   gap: 20px;
   border: 1px solid #99f1ed;
   border-radius: 8px;
-  background:url(${WiStarDarkDataUrl}) repeat,
-#000
-  ;
-  padding: 20px 0px;
+  background: url(${WiStarDarkDataUrl}) repeat, #000;
+  padding: 30px 0px;
+  @media (max-width: 768px) {
+    padding: 20px 0px;
+  }
 `;
 
 export const Box = styled.div`
-display: flex;
-justify-content: flex-start;
-flex-wrap: wrap;
-width: 85%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 85%;
 `;
 
 export const StyledActiveTitle = styled.p`
-font-size: 28px;
-color: white;
+  font-size: 28px;
+  color: white;
+  padding: 0px;
+  margin: 0px;
 `;
 
 export const StyledActiveText = styled.p`
-font-size: 18px;
-color: white;
-font-weight: 200;
-line-height: 1.5;
-margin-left: 8px;
-width: 96%;
+  font-size: 18px;
+  color: white;
+  font-weight: 200;
+  line-height: 1.5;
+  margin-left: 8px;
+  width: 96%;
+  padding: 0px;
+  margin: 0px;
 `;
 
 export const StyledKeywords = styled.p`
-color: #99f1ed;
-font-size: 16px;
-border: 1px solid #99f1ed;
-border-radius: 30px;
-padding: 8px 8px;
-margin-right: 5px;
-line-height: 1;
-margin-bottom: -3px;
+  color: #99f1ed;
+  font-size: 16px;
+  border: 1px solid #99f1ed;
+  border-radius: 30px;
+  padding: 8px 8px;
+  margin-right: 5px;
+  line-height: 1;
+  margin-bottom: -3px;
 `;

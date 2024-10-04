@@ -24,7 +24,7 @@ export const Container = styled.header`
 
 export const Wrapper = styled.nav<ScrollProps>`
   width: ${({ isScrolled }) => (isScrolled ? '95%' : '100%')};
-  margin-top: ${({ isScrolled }) => (isScrolled ? '10px' : '')};
+  margin-top: ${({ isScrolled }) => (isScrolled ? '10px' : '0px')};
   padding: ${({ isScrolled }) => (isScrolled ? '0px' : '10px')};
   box-shadow: ${({ isScrolled }) =>
     isScrolled ? '1.5px 1.5px 2px 2px var(--header-boxshadow-color)' : 'none'};
@@ -35,6 +35,12 @@ export const Wrapper = styled.nav<ScrollProps>`
   transition: all 0.3s ease-out;
   background: ${({ isScrolled }) =>
     isScrolled ? 'var(--header-scroll-background)' : 'transparent'};
+  @media (max-width: 768px) {
+    padding: 0px;
+    width: 100%;
+    margin: 0px;
+    border-radius: 0px;
+  }
 `;
 
 export const NavList = styled.ul`
@@ -47,6 +53,9 @@ export const NavList = styled.ul`
 
   &:hover li:not(:hover) a {
     opacity: 0.5;
+  }
+  @media (max-width: 768px) {
+    padding: 0px 20px;
   }
 `;
 

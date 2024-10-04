@@ -11,6 +11,7 @@ const WiStarDarkDataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(
 export const Container = styled.header`
   height: 100vh;
   width: 100%;
+  box-sizing: border-box;
   padding: 20px;
   display: flex;
   justify-content: center;
@@ -45,8 +46,10 @@ export const TextBox = styled.div`
   padding: 20px;
   height: 100%;
   max-width: 1200px;
+  @media (max-width: 768px) {
+    padding: 0px;
+  }
 `;
-
 
 export const H2 = styled.h2`
   font-size: 45px;

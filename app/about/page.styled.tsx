@@ -6,6 +6,9 @@ export const StyledSection = styled.section`
   width: 100%;
   padding: 150px 0px 150px 0px;
   height: 100%;
+  @media (max-width: 768px) {
+    padding: 100px 16px 50px 16px;
+  }
 `;
 
 export const Card = styled.div`
@@ -79,4 +82,10 @@ export const CompetenceBorder = styled.div`
 
 export const StyledImage = styled(Image)`
   border-radius: 6px;
+  width: 350px;
+  height: 350px;
+  @media (max-width: 768px) {
+    width: 150px !important;
+    height: 150px !important;
+  }
 `;

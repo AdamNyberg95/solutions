@@ -1,42 +1,39 @@
 import React from 'react';
-import { Box, StyledActiveText, StyledActiveTitle, StyledContainer, StyledKeywords, StyledLine, Text } from './ActiveText.styled';
+import {
+  Box,
+  StyledActiveText,
+  StyledActiveTitle,
+  StyledContainer,
+  StyledKeywords,
+  StyledLine,
+  Text,
+} from './ActiveText.styled';
 
 type ActiveTextProps = {
   text: string;
   activeTitle: string;
   activeText: string;
-  keywords: string[]; 
+  keywords: string[];
 };
 
-const ActiveText: React.FC<ActiveTextProps> = ({ activeText , activeTitle, keywords }) => {
+const ActiveText: React.FC<ActiveTextProps> = ({
+  activeText,
+  activeTitle,
+  keywords,
+}) => {
   return (
     <StyledContainer>
-      <Box
-
-      >
-      <StyledActiveTitle> {activeTitle} </StyledActiveTitle> 
+      <Box style={{ minHeight: '70px' }}>
+        <StyledActiveTitle> {activeTitle} </StyledActiveTitle>
       </Box>
-
-      <Box
-        style={{  marginTop: '-30px' }}
-      >
-       <StyledActiveText>  {activeText}  </StyledActiveText> 
+      <Box>
+        <StyledActiveText> {activeText} </StyledActiveText>
       </Box>
-
-      <Box
-        style={{ marginTop: '-30px' }}
-      >
-       
+      <Box>
         {keywords.map((keyword, index) => (
           <StyledKeywords key={index}>{keyword}</StyledKeywords>
         ))}
-     
-
-
       </Box>
-
-      
-    
     </StyledContainer>
   );
 };
