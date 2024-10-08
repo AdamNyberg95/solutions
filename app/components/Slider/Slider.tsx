@@ -22,15 +22,17 @@ import {
   Text,
   TextBox,
 } from './Slider.styled';
+import { StyledSection } from '../About/About.styled';
 
 const MySwiper: React.FC = () => {
   return (
+  
     <SliderContainer>
       <StyledSwiper
         // install Swiper modules
         modules={[Autoplay, Pagination, A11y]}
         spaceBetween={80}
-        slidesPerView={1.5}
+        slidesPerView={1}
         centeredSlides={true}
         pagination={{ clickable: true }}
         loop={true} //%
@@ -82,12 +84,12 @@ const MySwiper: React.FC = () => {
           <Slide>
             <SlideContainer>
               <Text>
-                "Sara tar sig an problem och sätter sig in i de verktyg vi
-                använder på Qte på ett mycket bra sätt. Sara är kommunikativ och
-                alla hon jobbar med är väldigt nöjda med det hon har gjort"
+                "Sara är en skicklig, kommunikativ och mycket
+                        ansvarstagande frontendutvecklare som kan skapa stort
+                        affärsvärde för alla techbolag."
               </Text>
               <ImgTextBox>
-                <StyledImg src={'/oskar.png'} />
+                <StyledImg src={'/jacob.jpeg'} />
                 <TextBox>
                   <ImgText>Oskar Råhlén</ImgText>
                   <ImgText2>Grundare, Qte development</ImgText2>
@@ -116,6 +118,7 @@ const MySwiper: React.FC = () => {
         </SwiperSlide>
       </StyledSwiper>
     </SliderContainer>
+  
   );
 };
 
