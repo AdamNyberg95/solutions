@@ -16,7 +16,7 @@ export const StyledContainer = styled.div`
   background: url(${WiStarDarkDataUrl}) repeat, #000;
   padding: 30px 0px;
   @media (max-width: 768px) {
-    padding: 20px 0px;
+    padding: 25px 0px;
   }
 `;
 
@@ -32,6 +32,9 @@ export const StyledActiveTitle = styled.p`
   color: white;
   padding: 0px;
   margin: 0px;
+  @media (max-width: 768px) {
+  font-size: 24px;
+  }
 `;
 
 export const StyledActiveText = styled.p`
@@ -43,6 +46,9 @@ export const StyledActiveText = styled.p`
   width: 96%;
   padding: 0px;
   margin: 0px;
+  @media (max-width: 768px) {
+  font-size: 16px;
+  }
 `;
 
 export const StyledKeywords = styled.p`
@@ -54,4 +60,8 @@ export const StyledKeywords = styled.p`
   margin-right: 5px;
   line-height: 1;
   margin-bottom: -3px;
+  @media (max-width: 768px) {
+  font-size: 14px;
+  }
+
 `;
