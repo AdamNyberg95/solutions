@@ -6,7 +6,8 @@ import ServiceItem from './components/ServiceItem/ServiceItem';
 import ActiveText from './components/ActiveText/ActiveText'; // Adjust the import path as needed
 import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
 import { TitleWrapper } from '../components/About/About.styled';
-import { H2, TypographyBigThin } from '../components/Hero/Hero.styled';
+import { TypographyBigThin } from '../components/Hero/Hero.styled';
+import H2 from '@/src/components/Typography/H2';
 
 // Define a type for the service
 type Service = {
@@ -61,7 +62,7 @@ const Service: React.FC = () => {
     <StyledSection>
         <TitleWrapper>
       <h1>Våra tjänster</h1>
-      <H2>Vi erbjuder heltäckande skräddarsydda lösningar</H2>
+      <H2 color={'var(--text-color)'}fontSize={'45px'} fontWeight="300">Vi erbjuder heltäckande skräddarsydda lösningar</H2>
       <TypographyBigThin dangerouslySetInnerHTML={{ __html: introText }} />
       </TitleWrapper>
 

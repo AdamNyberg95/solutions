@@ -48,6 +48,7 @@ export const TextBox = styled.div`
   max-width: 1200px;
   @media (max-width: 768px) {
     padding: 0px;
+    align-items: flex-start;
   }
 `;
 
@@ -67,18 +68,23 @@ export const TypographyBigThin = styled.h4`
   font-weight: 200;
   line-height: 1.5;
   margin-left: 0px;
+  @media (max-width: 768px) {
+  font-size: 19.5px;
+  }
 `;
 
 export const BtnWrapper = styled.div`
   display: flex;
   gap: 10px;
+  @media (max-width: 768px) {
+    margin-left: -1px;
+  }
 `;
 
 export const BtnText = styled.button`
   border: none;
   background-color: transparent;
   display: flex;
-
   align-items: center;
   margin-bottom: 10px;
   margin-left: 10px;
@@ -87,6 +93,10 @@ export const BtnText = styled.button`
     text-decoration: none;
     color: inherit;
   }
+  @media (max-width: 768px) {
+    margin-left: 0px;
+  }
+  
 `;
 
 export const TypographySmall = styled.p`
