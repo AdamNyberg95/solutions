@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 export const SliderContainer = styled.div`
-max-width: 1200px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   @media (max-width: 768px) {
@@ -22,7 +22,7 @@ export const Slide = styled.div`
   box-shadow: 0 2px 8px var(--reviewSlider-boxshadow-color);
   cursor: grabbing;
   @media (max-width: 768px) {
-  height: 450px;
+    height: 400px;
   }
 `;
 

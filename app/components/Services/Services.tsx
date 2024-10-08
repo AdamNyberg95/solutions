@@ -25,13 +25,12 @@ const Services: React.FC = () => {
     const handleResize = () => {
       setIsMobileView(window.innerWidth <= 768);
     };
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
     return () => {
-      window.removeEventListener("resize", handleResize);
+      window.removeEventListener('resize', handleResize);
     };
   }, []);
-
 
   return (
     <motion.div
@@ -48,33 +47,49 @@ const Services: React.FC = () => {
             color: 'var(--text-color)',
           }}
         >
-            {!isMobileView && (
-          <><H2 color={'var(--text-color)'} fontSize={'45px'} fontWeight="300" style={{ marginBottom: '12px' }}>
-              SA Solutions vill vara din digitala partner -{' '}
-            </H2><H2 fontWeight="200" color={'var(--text-color)'}
-              style={{
-                marginBottom: '50px',
-                marginLeft: '6px',
-              }}
-            >
+          {!isMobileView && (
+            <>
+              <H2
+                color={'var(--text-color)'}
+                fontSize={'45px'}
+                fontWeight="300"
+                style={{ marginBottom: '12px' }}
+              >
+                SA Solutions vill vara din digitala partner -{' '}
+              </H2>
+              <H2
+                fontWeight="200"
+                color={'var(--text-color)'}
+                style={{
+                  marginBottom: '50px',
+                  marginLeft: '6px',
+                }}
+              >
                 vi erbjuder dig heltäckande skräddarsydda lösningar
-              </H2></>
-                  )}
-                   {isMobileView && (
-          <><H2 color={'var(--text-color)'} fontSize={'45px'} fontWeight="300" style={{ marginBottom: '12px' }}>
-              SA Solutions vill vara din digitala partner{' '}
-            </H2>
-            
-            <TypographyBigThin 
-              style={{
-                marginBottom: '50px',
-              }}
-            >
-                Vi erbjuder dig heltäckande skräddarsydda lösningar. Våra lösningar får vi ditt företag att växa och synas!
-              </TypographyBigThin ></>
-                  )}
+              </H2>
+            </>
+          )}
+          {isMobileView && (
+            <>
+              <H2
+                color={'var(--text-color)'}
+                fontSize={'45px'}
+                fontWeight="300"
+                style={{ marginBottom: '12px' }}
+              >
+                SA Solutions vill vara din digitala partner{' '}
+              </H2>
 
-
+              <TypographyBigThin
+                style={{
+                  marginBottom: '50px',
+                }}
+              >
+                Vi erbjuder dig heltäckande skräddarsydda lösningar. Våra
+                lösningar får vi ditt företag att växa och synas!
+              </TypographyBigThin>
+            </>
+          )}
         </Link>
         <Link
           href={`/`}
@@ -83,7 +98,7 @@ const Services: React.FC = () => {
             color: 'var(--text-color)',
           }}
         >
-          <h1 >Våra tjänster</h1>
+          <h1>Våra tjänster</h1>
         </Link>
         <StyledDiv>
           <Link

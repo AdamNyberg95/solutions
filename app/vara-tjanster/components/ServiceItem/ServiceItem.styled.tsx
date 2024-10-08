@@ -1,5 +1,13 @@
 import styled from 'styled-components';
 
+export const OutsideContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 768px) {
+    gap: 0px;
+  }
+`;
+
 export const ItemContainer = styled.div<{ isActive: boolean }>`
   display: flex;
   flex-direction: column;
@@ -13,7 +21,6 @@ export const ItemContainer = styled.div<{ isActive: boolean }>`
     background-color 0.3s ease, border 0.3s ease;
   cursor: pointer;
   background-color: ${({ isActive }) => (isActive ? 'black' : '#222222')};
-
   &:hover {
     transform: translateY(-2px);
     box-shadow: 0 2px 4px #99f1ed;
