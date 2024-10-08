@@ -13,10 +13,12 @@ import {
   TextRolle,
   StyledImage,
 } from './About.styled';
-import { H2, TypographyBigThin } from '../Hero/Hero.styled';
+import { TypographyBigThin } from '../Hero/Hero.styled';
 import Primary from '@/src/components/Button/Primary/Primary';
 import { useRouter } from 'next/navigation';
 import CustomCursor from '../CustomCursor/CustomCrusor';
+import H2 from '@/src/components/Typography/H2';
+
 
 import { motion, useAnimation, useInView } from 'framer-motion';
 
@@ -88,7 +90,7 @@ export const About: React.FC = () => {
       )}
       <StyledSection>
         <TitleWrapper>
-          <H2>Vi är SA Solutions</H2>
+          <H2 color={'var(--text-color)'} fontSize={'45px'} fontWeight="300">Vi är SA Solutions</H2>
           <TypographyBigThin>{text}</TypographyBigThin>
         </TitleWrapper>
 

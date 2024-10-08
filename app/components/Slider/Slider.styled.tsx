@@ -75,6 +75,9 @@ export const Text = styled.p`
   text-align: center;
   font-size: 20px;
   color: var(--text-color);
+  @media (max-width: 768px) {
+    padding: 18px;
+  }
 `;
 
 export const StyledImg = styled.img`

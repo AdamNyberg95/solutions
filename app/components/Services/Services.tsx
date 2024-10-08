@@ -1,23 +1,37 @@
 'use client';
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { StyledDiv, StyledSection } from './Services.styled';
 import ServiceItem from '@/app/vara-tjanster/components/ServiceItem/ServiceItem';
 import { IoIosCode, IoIosBrush, IoIosMegaphone } from 'react-icons/io';
 import Link from 'next/link';
 import { motion, useInView, useAnimation } from 'framer-motion';
 import H2 from '@/src/components/Typography/H2';
+import { TypographyBigThin } from '../Hero/Hero.styled';
 
 const Services: React.FC = () => {
   const controls = useAnimation();
   const ref = React.useRef(null);
   const inView = useInView(ref, { once: true });
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
 
   useEffect(() => {
     if (inView) {
       controls.start({ y: 0, opacity: 1 });
     }
   }, [controls, inView]);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
 
   return (
     <motion.div
@@ -34,17 +48,33 @@ const Services: React.FC = () => {
             color: 'var(--text-color)',
           }}
         >
-          <H2 color={'var(--text-color)'}fontSize={'45px'} fontWeight="300" style={{ marginBottom: '12px' }}>
-            SA Solutions vill vara din digitala partner -{' '}
-          </H2>
-          <H2 fontWeight="200" color={'var(--text-color)'}
-            style={{
-              marginBottom: '50px',
-              marginLeft: '6px',
-            }}
-          >
-            vi erbjuder dig heltäckande skräddarsydda lösningar
-          </H2>
+            {!isMobileView && (
+          <><H2 color={'var(--text-color)'} fontSize={'45px'} fontWeight="300" style={{ marginBottom: '12px' }}>
+              SA Solutions vill vara din digitala partner -{' '}
+            </H2><H2 fontWeight="200" color={'var(--text-color)'}
+              style={{
+                marginBottom: '50px',
+                marginLeft: '6px',
+              }}
+            >
+                vi erbjuder dig heltäckande skräddarsydda lösningar
+              </H2></>
+                  )}
+                   {isMobileView && (
+          <><H2 color={'var(--text-color)'} fontSize={'45px'} fontWeight="300" style={{ marginBottom: '12px' }}>
+              SA Solutions vill vara din digitala partner{' '}
+            </H2>
+            
+            <TypographyBigThin 
+              style={{
+                marginBottom: '50px',
+              }}
+            >
+                Vi erbjuder dig heltäckande skräddarsydda lösningar. Våra lösningar får vi ditt företag att växa och synas!
+              </TypographyBigThin ></>
+                  )}
+
+
         </Link>
         <Link
           href={`/`}
