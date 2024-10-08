@@ -5,8 +5,6 @@ import {
   StyledActiveTitle,
   StyledContainer,
   StyledKeywords,
-  StyledLine,
-  Text,
 } from './ActiveText.styled';
 
 type ActiveTextProps = {

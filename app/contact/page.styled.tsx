@@ -6,13 +6,23 @@ export const StyledSection = styled.section`
   padding: 150px 0px 150px 0px;
   @media (max-width: 768px) {
     box-sizing: border-box;
-    padding: 100px 16px 50px 16px;
+  padding: 100px 20px 50px 20px;
+
   }
 `;
 
 export const TextWrapper = styled.div`
   width: 50%;
   @media (max-width: 768px) {
+    width: 100%;
+  }
+`;
+
+export const TextBox = styled.div`
+margin-top: 50px;
+width: 77%;
+margin-left: 0px;
+@media (max-width: 768px) {
     width: 100%;
   }
 `;
@@ -35,6 +45,9 @@ export const TextAndFormWrapper = styled.div`
 export const EmailFormWrapper = styled.div`
   display: flex;
   flex-direction: column;
+  @media (max-width: 768px) {
+    padding: 20px 0px;
+  }
 `;
 
 export const ContactBox = styled.div`

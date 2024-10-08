@@ -5,7 +5,8 @@ export const StyledSection = styled.section`
   width: 100%;
   padding: 150px 0px 100px 0px;
   @media (max-width: 768px) {
-    padding: 100px 16px 50px 16px;
+  padding: 100px 20px 50px 20px;
+
   }
 `;
 export const StyledDiv = styled.div`

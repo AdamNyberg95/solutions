@@ -7,20 +7,29 @@ export const StyledSection = styled.section`
   padding: 150px 0px 150px 0px;
   height: 100%;
   @media (max-width: 768px) {
-    padding: 100px 16px 50px 16px;
+  width: 90%;
+  padding: 100px 20px 50px 20px;
+
   }
+`;
+
+
+export const CardWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
 `;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: row;
   padding: 50px 30px;
-`;
-
-export const CardWrapper = styled.div`
-  display: flex;
-  justify-content: center;
+  @media (max-width: 768px) {
   flex-direction: column;
+  padding: 20px 0px;
+
+  }
 `;
 
 export const TextWrapper = styled.div`
@@ -53,6 +62,9 @@ export const Border = styled.div`
   border-bottom: 1px solid;
   border-color: var(--beige-color);
   width: 700px;
+  @media (max-width: 768px) {
+    width: 350px;
+  }
 `;
 
 export const Title2 = styled.p`
@@ -67,6 +79,12 @@ export const Text = styled.p`
 export const CompetenceWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2px; 
+  @media (max-width: 768px) {
+    max-width: 350px;
+  }
+
 `;
 
 export const CompetenceBorder = styled.div`
@@ -78,6 +96,8 @@ export const CompetenceBorder = styled.div`
   justify-content: center;
   align-items: center;
   margin-right: 5px;
+  @media (max-width: 768px) {
+margin-bottom: 2px;  }
 `;
 
 export const StyledImage = styled(Image)`

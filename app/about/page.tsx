@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import {
   Border,
   Card,
@@ -31,6 +31,8 @@ import {
 const About: React.FC = () => {
   const adamSectionRef = useRef<HTMLDivElement>(null);
   const saraSectionRef = useRef<HTMLDivElement>(null);
+  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
+
 
   const text =
     'SA Solutions är ett nystartat web-solution bolag, vars syfte är att hjälpa företag skapa digitala lösningar. Vår vision är att tillsammans med företag se till så deras digitala lösningar hänger med i dagens teknologi. SA Solutions är belägna i Stockholm och på Åland. <br></br> Vi som står bakom SA Solutions är två utvecklare som båda brinner för att skapa den bästa weblösningen för ditt företag. Med vår tidigare efarenhet av utveckling tror vi att vi kan hjälpa ditt företag att hålla sig i upto-date med dagens tekonlogi.';
@@ -87,6 +89,17 @@ const About: React.FC = () => {
     }
   };
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <>
       <StyledSection id="about">
@@ -127,6 +140,14 @@ const About: React.FC = () => {
           </Card>
 
           <Card ref={saraSectionRef} id="saraSection">
+          {isMobileView && (
+            <StyledImage
+              src={'/Sara-2.jpg'}
+              alt={'profileImg'}
+              width={350}
+              height={350}
+            />
+          )}
             <TextWrapper>
               <CardTitle>Sara Södergård</CardTitle>
               <UnderTitle>Coding since, February 2022</UnderTitle>
@@ -167,12 +188,14 @@ const About: React.FC = () => {
                 ))}
               </CompetenceWrapper>
             </TextWrapper>
+            {!isMobileView && (
             <StyledImage
               src={'/Sara-2.jpg'}
               alt={'profileImg'}
               width={350}
               height={350}
             />
+          )}
           </Card>
         </CardWrapper>
       </StyledSection>

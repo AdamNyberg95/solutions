@@ -11,6 +11,7 @@ import {
   Typography,
   TextAndFormWrapper,
   Wrapper,
+  TextBox,
 } from './page.styled';
 import {
   ColorSpan,
@@ -26,12 +27,12 @@ const Contact: React.FC = () => {
         <TextAndFormWrapper>
           <TextWrapper>
             <H2>Kontakta oss</H2>
-            <TypographyBigThin
-              style={{ marginTop: '50px', width: '87%', marginLeft: '0px' }}
-            >
+            <TextBox>
+            <TypographyBigThin>
               Vi vill hjälpa dig digitalisera eller förbättra ditt företags
               digitalakanaler. Välkommen att kontakta oss!
             </TypographyBigThin>
+            </TextBox>
             <ContactBox>
               <InsideBox>
                 <h3>Mail</h3>
@@ -69,7 +70,7 @@ const Contact: React.FC = () => {
           </TextWrapper>
 
           <EmailFormWrapper>
-            <h3>Skicka ett meddelande</h3>
+            <h1>Skicka ett meddelande</h1>
             <EmailForm />
           </EmailFormWrapper>
         </TextAndFormWrapper>
