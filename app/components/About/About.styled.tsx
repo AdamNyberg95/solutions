@@ -7,8 +7,9 @@ export const StyledSection = styled.section`
   padding: 150px 0px 0px 0px;
   margin-bottom: 150px;
   @media (max-width: 768px) {
-    padding: 20px;
+    padding: 55px 25px;
     box-sizing: border-box;
+  margin-bottom: 30px;
   }
 `;
 
