@@ -80,6 +80,10 @@ export const NavLinks = styled.li<{ isActive: boolean }>`
     color: inherit;
     transition: opacity 0.3s ease;
   }
+  @media (max-width: 768px) {
+  font-size: 14px;
+    
+  }
 `;
 
 export const BtnPrimary = styled.button`
