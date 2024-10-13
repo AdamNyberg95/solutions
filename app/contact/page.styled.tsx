@@ -72,6 +72,6 @@ export const Typography = styled.p`
   font-weight: 200;
 
   @media (max-width: 768px) {
-  font-size: 12px;
+  font-size: 14px;
   }
 `;

@@ -32,7 +32,7 @@ export const FormContainer = styled.form`
   input[type='email'],
   input[type='password'] {
     border: none;
-    border-bottom: 1px solid var(--form-border-color);
+    border-bottom: 1px solid grey;
     margin-top: 15px;
     margin-bottom: 15px;
     padding: 10px 2px;
