@@ -13,25 +13,31 @@ const Services: React.FC = () => {
   const controls = useAnimation();
   const ref = React.useRef(null);
   const inView = useInView(ref, { once: true });
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
+  const [isMobileView, setIsMobileView] = useState(false); // Initial state set to false
+
+  useEffect(() => {
+    // Check window width when the component mounts
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+
+    // Call handleResize to set initial value
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (inView) {
       controls.start({ y: 0, opacity: 1 });
     }
   }, [controls, inView]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
-    };
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
   return (
     <motion.div
       ref={ref}

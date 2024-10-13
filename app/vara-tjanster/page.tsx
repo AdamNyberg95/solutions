@@ -78,25 +78,32 @@ const Service: React.FC = () => {
   const controls = useAnimation();
   const ref = React.useRef(null);
   const inView = useInView(ref, { once: true });
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
+  const [isMobileView, setIsMobileView] = useState(false);
   const [activeService, setActiveService] = useState<Service>(services[0]);
+
+  useEffect(() => {
+    // Check if window is defined before accessing it
+    const handleResize = () => {
+      setIsMobileView(window.innerWidth <= 768);
+    };
+
+    // Call handleResize once on mount to set the initial value
+    handleResize();
+
+    // Add resize event listener
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   useEffect(() => {
     if (inView) {
       controls.start({ y: 0, opacity: 1 });
     }
   }, [controls, inView]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
-    };
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   // Handler to set the active service
   const handleServiceClick = (service: Service) => {
