@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
               <InsideBox>
                 <h3>Telefon</h3>
                 <Typography style={{ marginTop: '-10px' }}>
-                  +46763437347
+                  +46 763437347
                 </Typography>
               </InsideBox>
             </ContactBox>
