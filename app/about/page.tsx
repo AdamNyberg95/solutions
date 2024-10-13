@@ -29,10 +29,9 @@ import {
 } from '../components/Header/Header.styled';
 
 const About: React.FC = () => {
-  const adamSectionRef = useRef<HTMLDivElement>(null);
-  const saraSectionRef = useRef<HTMLDivElement>(null);
-  const [isMobileView, setIsMobileView] = useState(window.innerWidth <= 768);
-
+  const [isMobileView, setIsMobileView] = useState(false); // Initialize to false
+  const adamSectionRef = useRef<HTMLDivElement | null>(null);
+  const saraSectionRef = useRef<HTMLDivElement | null>(null);
 
   const text =
     'SA Solutions är ett nystartat web-solution bolag, vars syfte är att hjälpa företag skapa digitala lösningar. Vår vision är att tillsammans med företag se till så deras digitala lösningar hänger med i dagens teknologi. SA Solutions är belägna i Stockholm och på Åland. <br></br> Vi som står bakom SA Solutions är två utvecklare som båda brinner för att skapa den bästa weblösningen för ditt företag. Med vår tidigare efarenhet av utveckling tror vi att vi kan hjälpa ditt företag att hålla sig i upto-date med dagens tekonlogi.';
@@ -64,17 +63,40 @@ const About: React.FC = () => {
     'Jag är en Frontend utvecklare med erfarenhet av fullstack utveckling. Jag har varit med och byggt E-GO App från grunden, där jag haft ansvar för både frontend och backend. Under min tid på E-GO har jag varit involverad i flera spännande projekt, vilket har gett mig värdefull erfarenhet och insikter i hur man skapar effektiva och användarvänliga applikationer.';
 
   useEffect(() => {
-    const hash = window.location.hash.substr(1);
-    let yOffset = -65;
+    // Check if window is defined before accessing it
+    const handleResize = () => {
+      if (typeof window !== 'undefined') {
+        setIsMobileView(window.innerWidth <= 768);
+      }
+    };
 
-    switch (hash) {
-      case 'adamSection':
-        scrollToSection(adamSectionRef, yOffset);
-        break;
-      case 'saraSection':
-        scrollToSection(saraSectionRef, yOffset);
-      default:
-        break;
+    handleResize(); // Set initial value on mount
+
+    // Add event listener for window resize
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup listener on unmount
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Ensure window is defined
+      const hash = window.location.hash.substr(1);
+      let yOffset = -65;
+
+      switch (hash) {
+        case 'adamSection':
+          scrollToSection(adamSectionRef, yOffset);
+          break;
+        case 'saraSection':
+          scrollToSection(saraSectionRef, yOffset);
+          break; // Missing break here
+        default:
+          break;
+      }
     }
   }, []);
 
@@ -82,23 +104,13 @@ const About: React.FC = () => {
     ref: React.RefObject<HTMLDivElement>,
     yOffset: number
   ) => {
-    if (ref.current) {
+    if (ref.current && typeof window !== 'undefined') {
+      // Ensure window is defined
       const y =
         ref.current.getBoundingClientRect().top + window.scrollY + yOffset;
       window.scrollTo({ top: y, behavior: 'smooth' });
     }
   };
-
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobileView(window.innerWidth <= 768);
-    };
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <>
@@ -140,14 +152,14 @@ const About: React.FC = () => {
           </Card>
 
           <Card ref={saraSectionRef} id="saraSection">
-          {isMobileView && (
-            <StyledImage
-              src={'/Sara-2.jpg'}
-              alt={'profileImg'}
-              width={350}
-              height={350}
-            />
-          )}
+            {isMobileView && (
+              <StyledImage
+                src={'/Sara-2.jpg'}
+                alt={'profileImg'}
+                width={350}
+                height={350}
+              />
+            )}
             <TextWrapper>
               <CardTitle>Sara Södergård</CardTitle>
               <UnderTitle>Coding since, February 2022</UnderTitle>
@@ -189,13 +201,13 @@ const About: React.FC = () => {
               </CompetenceWrapper>
             </TextWrapper>
             {!isMobileView && (
-            <StyledImage
-              src={'/Sara-2.jpg'}
-              alt={'profileImg'}
-              width={350}
-              height={350}
-            />
-          )}
+              <StyledImage
+                src={'/Sara-2.jpg'}
+                alt={'profileImg'}
+                width={350}
+                height={350}
+              />
+            )}
           </Card>
         </CardWrapper>
       </StyledSection>
