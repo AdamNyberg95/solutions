@@ -22,11 +22,9 @@ import {
   Text,
   TextBox,
 } from './Slider.styled';
-import { StyledSection } from '../About/About.styled';
 
 const MySwiper: React.FC = () => {
   return (
-  
     <SliderContainer>
       <StyledSwiper
         // install Swiper modules
@@ -48,9 +46,9 @@ const MySwiper: React.FC = () => {
           <Slide>
             <SlideContainer>
               <Text>
-                "Sara tar sig an problem och sätter sig in i de verktyg vi
+                &quot;Sara tar sig an problem och sätter sig in i de verktyg vi
                 använder på Qte på ett mycket bra sätt. Sara är kommunikativ och
-                alla hon jobbar med är väldigt nöjda med det hon har gjort"
+                alla hon jobbar med är väldigt nöjda med det hon har gjort&quot;
               </Text>
               <ImgTextBox>
                 <StyledImg src={'/oskar.png'} />
@@ -66,9 +64,10 @@ const MySwiper: React.FC = () => {
           <Slide>
             <SlideContainer>
               <Text>
-                "Adam har bidragit till att bygga E-GO App, där han visat sig
-                vara ansvarstagande och driven. Hans problemlösningsförmåga och
-                snabba inlärning av nya verktyg gör honom mycket uppskattad."
+                &quot;Adam har bidragit till att bygga E-GO App, där han visat
+                sig vara ansvarstagande och driven. Hans problemlösningsförmåga
+                och snabba inlärning av nya verktyg gör honom mycket
+                uppskattad.&quot;
               </Text>
               <ImgTextBox>
                 <StyledImg src={'/navid.jpeg'} />
@@ -84,9 +83,9 @@ const MySwiper: React.FC = () => {
           <Slide>
             <SlideContainer>
               <Text>
-                "Sara är en skicklig, kommunikativ och mycket
-                        ansvarstagande frontendutvecklare som kan skapa stort
-                        affärsvärde för alla techbolag."
+                &quot;Sara är en skicklig, kommunikativ och mycket
+                ansvarstagande frontendutvecklare som kan skapa stort
+                affärsvärde för alla techbolag.&quot;
               </Text>
               <ImgTextBox>
                 <StyledImg src={'/jacob.jpeg'} />
@@ -102,9 +101,10 @@ const MySwiper: React.FC = () => {
           <Slide>
             <SlideContainer>
               <Text>
-                "Adam har bidragit till att bygga E-GO App, där han visat sig
-                vara ansvarstagande och driven. Hans problemlösningsförmåga och
-                snabba inlärning av nya verktyg gör honom mycket uppskattad."
+                &quot;Adam har bidragit till att bygga E-GO App, där han visat
+                sig vara ansvarstagande och driven. Hans problemlösningsförmåga
+                och snabba inlärning av nya verktyg gör honom mycket
+                uppskattad.&quot;
               </Text>
               <ImgTextBox>
                 <StyledImg src={'/navid.jpeg'} />
@@ -118,7 +118,6 @@ const MySwiper: React.FC = () => {
         </SwiperSlide>
       </StyledSwiper>
     </SliderContainer>
-  
   );
 };
 

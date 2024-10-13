@@ -7,9 +7,8 @@ export const StyledSection = styled.section`
   padding: 150px 0px 0px 0px;
   margin-bottom: 150px;
   @media (max-width: 768px) {
-    padding: 55px 25px;
+    padding: 20px;
     box-sizing: border-box;
-  margin-bottom: 30px;
   }
 `;
 
@@ -80,20 +79,4 @@ export const CardBtnWrapper = styled.div`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-`;
-export const StyledH2 = styled.h2`
-  font-size: 24px; /* Default style */
-
-  @media (max-width: 768px) {
-    &::after {
-      content: 'SA Solutions'; /* Changes text on tablet and smaller */
-      display: block;
-    }
-
-    &::before {
-      content: none;
-    }
-
-    content: ' '; /* Hides original content */
-  }
 `;
