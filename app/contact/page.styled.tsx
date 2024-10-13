@@ -67,7 +67,7 @@ export const InsideBox = styled.div`
 `;
 
 export const Typography = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   color: var(--text-color);
   font-weight: 200;
 `;

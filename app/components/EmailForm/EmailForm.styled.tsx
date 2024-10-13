@@ -37,6 +37,8 @@ export const FormContainer = styled.form`
     margin-bottom: 15px;
     padding: 10px 2px;
     background-color: transparent;
+    color: var(--text-color);
+    font-size: 18px;
   }
 
   input::placeholder {
@@ -60,13 +62,17 @@ export const FormContainer = styled.form`
   }
 
   input[type='submit']:hover {
-    background-color: #333;
+    background-color: var(--btn-hover-color);
   }
 
   /* Remove blue outline and set black outline on focus */
   input:focus,
   textarea:focus {
     outline: none;
+    color: var(--text-color-form);
+    font-size: 18px;
+
+
   }
 
   @media (max-width: 768px) {

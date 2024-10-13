@@ -19,7 +19,6 @@ import {
 } from './page.styled';
 import { StyledLink, TitleWrapper } from '../components/About/About.styled';
 import {
-  H2,
   StyledArrowIcon,
   TypographyBigThin,
 } from '../components/Hero/Hero.styled';
@@ -27,6 +26,7 @@ import {
   BtnPrimarySmall,
   BtnSmallTypography,
 } from '../components/Header/Header.styled';
+import H2 from '@/src/components/Typography/H2';
 
 const About: React.FC = () => {
   const [isMobileView, setIsMobileView] = useState(false); // Initialize to false
@@ -117,7 +117,7 @@ const About: React.FC = () => {
       <StyledSection id="about">
         <TitleWrapper>
           <h1>Om oss</h1>
-          <H2>Vi är SA Solutions</H2>
+          <H2 color={'var(--text-color)'} fontSize={'45px'} fontWeight="300" >Vi är SA Solutions</H2>
           <TypographyBigThin dangerouslySetInnerHTML={{ __html: text }} />
         </TitleWrapper>
 

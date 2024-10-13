@@ -15,9 +15,9 @@ import {
 } from './page.styled';
 import {
   ColorSpan,
-  H2,
   TypographyBigThin,
 } from '../components/Hero/Hero.styled';
+import H2 from '@/src/components/Typography/H2';
 
 const Contact: React.FC = () => {
   return (
@@ -26,18 +26,18 @@ const Contact: React.FC = () => {
         <h1>Kontakt</h1>
         <TextAndFormWrapper>
           <TextWrapper>
-            <H2>Kontakta oss</H2>
+            <H2 color={'var(--text-color)'} fontSize={'45px'} fontWeight="300">Kontakta oss</H2>
             <TextBox>
-            <TypographyBigThin>
-              Vi vill hjälpa dig digitalisera eller förbättra ditt företags
-              digitalakanaler. Välkommen att kontakta oss!
-            </TypographyBigThin>
+              <TypographyBigThin>
+                Vi vill hjälpa dig digitalisera eller förbättra ditt företags
+                digitalakanaler. Välkommen att kontakta oss!
+              </TypographyBigThin>
             </TextBox>
             <ContactBox>
               <InsideBox>
                 <h3>Mail</h3>
                 <Typography style={{ marginTop: '-10px' }}>
-                  info@sasolutions.com
+                  sasolutions.dev@gmail.com
                 </Typography>
               </InsideBox>
               <InsideBox>
@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
               <InsideBox>
                 <h3>Sara Södergård</h3>
                 <Typography style={{ marginTop: '-10px' }}>
-                  Sara@sasolutions.com
+                  sodergardsara@gmail.com
                 </Typography>
                 <Typography style={{ marginTop: '-10px' }}>
                   +46 763437347
@@ -60,10 +60,10 @@ const Contact: React.FC = () => {
               <InsideBox>
                 <h3>Adam Nyberg</h3>
                 <Typography style={{ marginTop: '-10px' }}>
-                  Adam@sasolutions.com
+                  adamnyberg95@gmail.com
                 </Typography>
                 <Typography style={{ marginTop: '-10px' }}>
-                  +46 763437347
+                  +46 708527705
                 </Typography>
               </InsideBox>
             </ContactBox>
@@ -75,7 +75,7 @@ const Contact: React.FC = () => {
           </EmailFormWrapper>
         </TextAndFormWrapper>
       </Wrapper>
-    </StyledSection>
+    </StyledSection >
   );
 };
 
