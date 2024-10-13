@@ -9,14 +9,6 @@ const moveLeft = keyframes`
   }
 `;
 
-const LogoWrapper = styled.div`
-  width: 100px; /* Adjust the size as needed */
-  height: 50px; /* Adjust the size as needed */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
-
 const LogoImage = styled.img`
   max-width: 100%;
   max-height: 100%;
@@ -29,10 +21,18 @@ export const LogoSliderWrapper = styled.div`
   width: 100%;
   height: 50px;
   z-index: 1;
+  @media (max-width: 768px) {
+    height: 40px;
+    overflow: hidden;
+    padding-bottom: 60px;
+  }
 `;
 
 export const LogoSliderContainer = styled.div`
   display: flex;
   gap: 80px;
   animation: ${moveLeft} 25s linear infinite;
+  @media (max-width: 768px) {
+    gap: 20px;
+  }
 `;

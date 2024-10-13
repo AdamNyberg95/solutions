@@ -2,6 +2,7 @@ import { StarSvg } from '@/app/assets/icons/StarSvg';
 import { StarSvgDark } from '@/app/assets/icons/StarSvgDark';
 import styled, { keyframes } from 'styled-components';
 import { IoIosArrowRoundForward } from 'react-icons/io';
+import Link from 'next/link';
 
 const WiStarsDataURL = `data:image/svg+xml;utf8,${encodeURIComponent(StarSvg)}`;
 const WiStarDarkDataUrl = `data:image/svg+xml;utf8,${encodeURIComponent(
@@ -69,7 +70,7 @@ export const TypographyBigThin = styled.h4`
   line-height: 1.5;
   margin-left: 0px;
   @media (max-width: 768px) {
-  font-size: 19.5px;
+    font-size: 19.5px;
   }
 `;
 
@@ -96,12 +97,21 @@ export const BtnText = styled.button`
   @media (max-width: 768px) {
     margin-left: 0px;
   }
-  
 `;
 
 export const TypographySmall = styled.p`
   font-size: 18px;
   color: var(--text-color);
+`;
+
+export const StyledLink = styled(Link)`
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Remove the default underline */
+
+  &:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
 `;
 
 export const BtnTypography = styled.p`

@@ -34,7 +34,7 @@ const Home: React.FC = () => {
     >
       <Hero />
       {showPopup && <Popup togglePopup={togglePopup} />}
-      {/* <LogoSlider /> */}
+      <LogoSlider />
       <Services />
       <About />
       <Slider />

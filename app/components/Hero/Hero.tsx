@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {
+  StyledLink,
   ColorSpan,
   BtnText,
   BtnWrapper,
@@ -11,13 +12,10 @@ import {
   TypographySmall,
   StyledIconBtnText,
 } from './Hero.styled';
-import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Primary from '@/src/components/Button/Primary/Primary';
 import H1 from '@/src/components/Typography/H1';
 import H2 from '@/src/components/Typography/H2';
-import { StyledLink } from '../About/About.styled';
-
 
 export const Hero: React.FC = () => {
   const text =
@@ -31,7 +29,7 @@ export const Hero: React.FC = () => {
         <H1 color={'var(--blue-color)'} fontSize={'72px'} fontWeight="300">
           SA Solutions
         </H1>
-        <H2 color={'var(--text-color)'}fontSize={'45px'} fontWeight="300">
+        <H2 color={'var(--text-color)'} fontSize={'45px'} fontWeight="300">
           Your solution for <ColorSpan>your</ColorSpan> web
         </H2>
         <TypographyBigThin>
@@ -55,13 +53,10 @@ export const Hero: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }}
           >
-            <Link
-              href={`/about`}
-              style={{ display: 'flex', alignItems: 'center' }}
-            >
+            <StyledLink href={`/about`}>
               <TypographySmall> Läs mer om oss </TypographySmall>
               <StyledIconBtnText size={25} />
-            </Link>
+            </StyledLink>
           </motion.div>
         </BtnText>
         <BtnWrapper>
@@ -70,19 +65,17 @@ export const Hero: React.FC = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }}
           >
-                 <StyledLink href={`/contact`}>
-
-            <Primary text="Kontakta oss" />
+            <StyledLink href={`/contact`}>
+              <Primary text="Kontakta oss" />
             </StyledLink>
-
           </motion.div>
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.5, delay: 0 }}
           >
-                 <StyledLink href={`/vara-tjanster`}>
-            <Primary text="Våra tjänster" />
+            <StyledLink href={`/vara-tjanster`}>
+              <Primary text="Våra tjänster" />
             </StyledLink>
           </motion.div>
         </BtnWrapper>

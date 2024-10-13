@@ -55,7 +55,7 @@ export const NavList = styled.ul`
     opacity: 0.5;
   }
   @media (max-width: 768px) {
-    padding: 0px 20px;
+    padding: 0px 16px;
   }
 `;
 
@@ -81,8 +81,8 @@ export const NavLinks = styled.li<{ isActive: boolean }>`
     transition: opacity 0.3s ease;
   }
   @media (max-width: 768px) {
-  font-size: 14px;
-    
+    font-size: 14px;
+    padding: 8px 6px;
   }
 `;
 
