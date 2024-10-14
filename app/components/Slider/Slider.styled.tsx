@@ -78,6 +78,8 @@ export const Text = styled.p`
   color: var(--text-color);
   @media (max-width: 768px) {
     padding: 18px;
+  font-size: 18px;
+  font-weight: 300
   }
 `;
 
@@ -100,10 +102,18 @@ export const TextBox = styled.div`
 
 export const ImgText = styled.p`
   font-size: 18px;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  font-weight: 300;
+
+  }
 `;
 
 export const ImgText2 = styled.p`
   font-size: 16px;
   font-weight: 200;
   margin-top: -13px;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 `;
