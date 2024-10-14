@@ -79,7 +79,9 @@ const Service: React.FC = () => {
   const ref = React.useRef(null);
   const inView = useInView(ref, { once: true });
   const [isMobileView, setIsMobileView] = useState(false);
-  const [activeService, setActiveService] = useState<Service>(services[0]);
+  const [activeService, setActiveService] = useState<Service | null>(
+    services[0]
+  ); // or null if needed
 
   useEffect(() => {
     // Check if window is defined before accessing it
@@ -107,7 +109,12 @@ const Service: React.FC = () => {
 
   // Handler to set the active service
   const handleServiceClick = (service: Service) => {
-    setActiveService(service);
+    // Toggle active service
+    if (activeService && activeService.title === service.title) {
+      setActiveService(null); // Close if already active
+    } else {
+      setActiveService(service); // Set active service
+    }
   };
 
   return (
@@ -129,7 +136,7 @@ const Service: React.FC = () => {
               title={service.title}
               text={service.text}
               onClick={() => handleServiceClick(service)}
-              isActive={service.title === activeService.title} // Pass isActive prop
+              isActive={service.title === activeService?.title}
               isMobileView={isMobileView} // Pass isMobileView prop
               activeService={activeService} // Pass activeService prop
             />
