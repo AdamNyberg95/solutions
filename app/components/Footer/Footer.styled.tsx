@@ -148,7 +148,6 @@ export const TypographyBox2 = styled.p`
 `;
 
 export const StyledImage = styled.img`
-  width: 72px;
   height: 80px;
   border-radius: 6px;
 `;

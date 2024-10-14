@@ -39,13 +39,11 @@ export const Card = styled.div`
 `;
 
 export const StyledImage = styled.img`
-  width: 300px;
   height: 300px;
   border-radius: 6px;
   cursor: none;
   z-index: 1;
   @media (max-width: 768px) {
-    width: 100%;
     height: 155px;
   }
 `;
