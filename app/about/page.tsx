@@ -34,9 +34,9 @@ const About: React.FC = () => {
   const saraSectionRef = useRef<HTMLDivElement | null>(null);
 
   const text =
-    'SA Solutions är ett nystartat web-solution bolag, vars syfte är att hjälpa företag skapa digitala lösningar. Vår vision är att tillsammans med företag se till så deras digitala lösningar hänger med i dagens teknologi. SA Solutions är belägna i Stockholm och på Åland. <br></br> Vi som står bakom SA Solutions är två utvecklare som båda brinner för att skapa den bästa weblösningen för ditt företag. Med vår tidigare efarenhet av utveckling tror vi att vi kan hjälpa ditt företag att hålla sig i upto-date med dagens tekonlogi.';
+    'SA Solutions är ett nystartat webblösnings bolag, vars syfte är att hjälpa företag skapa digitala lösningar. Vår vision är att tillsammans med företag se till så deras digitala lösningar hänger med i dagens teknologi. SA Solutions är belägna i Stockholm och på Åland. <br></br> Vi som står bakom SA Solutions är två utvecklare som båda brinner för att skapa den bästa webblösningen för ditt företag. Med vår tidigare efarenhet av utveckling tror vi att vi kan hjälpa ditt företag att hålla sig i upto-date med dagens tekonlogi.';
   const textSara =
-    'Jag är en Frontend utvecklare med passion för UX/UI design. Jag har tidigare varit intern på tech partnern Qte development där jag varit del av flera spännande projekt, bland annat har jag haft eget ansvar över frontend delen av en adminplattform tillhörande en applikation för en hårtransplantaions klinik. <br></br> Jag tog examen som frontend utvecklare juni 2024 och är nu super-pepp på att börja hjälpa företag att vara upto-date med dagens tekonologi.';
+    'Jag är en Frontend utvecklare med passion för UX/UI design. Jag har tidigare varit intern på tech partnern Qte development där jag varit del av flera spännande projekt, bland annat har jag haft eget ansvar över frontend delen av en adminplattform tillhörande en applikation för en hårtransplantaions klinik. <br></br> Jag tog examen som frontend utvecklare juni 2024 och är nu super-pepp på att börja hjälpa företag att vara upto-date med dagens teknologi.';
 
   const competenceListSara = [
     'React JS',
@@ -173,7 +173,7 @@ const About: React.FC = () => {
               <TextWithBtnWrapper>
                 <Text>
                   {' '}
-                  Kolla in min portfolio för att ta del av mina tidigare projekt{' '}
+                  Kolla in min portfolio för att ta del av mina tidigare projekt.{' '}
                 </Text>
                 <StyledLink
                   href="https://portfolio-sarasodergard.vercel.app/"
