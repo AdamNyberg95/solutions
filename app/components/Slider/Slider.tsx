@@ -97,25 +97,6 @@ const MySwiper: React.FC = () => {
             </SlideContainer>
           </Slide>
         </SwiperSlide>
-        <SwiperSlide>
-          <Slide>
-            <SlideContainer>
-              <Text>
-                &quot;Adam har bidragit till att bygga E-GO App, där han visat
-                sig vara ansvarstagande och driven. Hans problemlösningsförmåga
-                och snabba inlärning av nya verktyg gör honom mycket
-                uppskattad.&quot;
-              </Text>
-              <ImgTextBox>
-                <StyledImg src={'/navid.jpeg'} />
-                <TextBox>
-                  <ImgText>Navid Nayeri</ImgText>
-                  <ImgText2>Grundare, E-GO App</ImgText2>
-                </TextBox>
-              </ImgTextBox>
-            </SlideContainer>
-          </Slide>
-        </SwiperSlide>
       </StyledSwiper>
     </SliderContainer>
   );
