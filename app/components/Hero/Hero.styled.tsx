@@ -37,6 +37,10 @@ export const Container = styled.header`
         var(--header-color-shade3) 100%
       );
   }
+  @media (max-width: 768px) {
+    padding: 100px 20px 0px 20px;
+    height: auto;
+  }
 `;
 
 export const TextBox = styled.div`

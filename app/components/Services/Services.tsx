@@ -86,11 +86,7 @@ const Services: React.FC = () => {
                 SA Solutions vill vara din digitala partner{' '}
               </H2>
 
-              <TypographyBigThin
-                style={{
-                  marginBottom: '50px',
-                }}
-              >
+              <TypographyBigThin>
                 Vi erbjuder dig heltäckande skräddarsydda lösningar. Våra
                 lösningar får vi ditt företag att växa och synas!
               </TypographyBigThin>
