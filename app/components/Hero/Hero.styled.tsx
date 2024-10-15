@@ -38,7 +38,7 @@ export const Container = styled.header`
       );
   }
   @media (max-width: 768px) {
-    padding: 100px 20px 0px 20px;
+    padding: 60px 20px 0px 20px;
     height: auto;
   }
 `;
