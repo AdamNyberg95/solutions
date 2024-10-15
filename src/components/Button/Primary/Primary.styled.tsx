@@ -29,7 +29,7 @@ export const StyledButton = styled.a`
 
   i {
     font-style: normal;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1;
     display: inline-block;
     height: 100%;

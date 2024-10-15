@@ -40,6 +40,7 @@ export const Container = styled.header`
   @media (max-width: 768px) {
     padding: 60px 20px 0px 20px;
     height: auto;
+  height: 95vh;
   }
 `;
 
@@ -74,7 +75,7 @@ export const TypographyBigThin = styled.h4`
   line-height: 1.5;
   margin-left: 0px;
   @media (max-width: 768px) {
-    font-size: 19.5px;
+    font-size: 17px;
   }
 `;
 
@@ -106,6 +107,7 @@ export const BtnText = styled.button`
 export const TypographySmall = styled.p`
   font-size: 18px;
   color: var(--text-color);
+ 
 `;
 
 export const StyledLink = styled(Link)`
