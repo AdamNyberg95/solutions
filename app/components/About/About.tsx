@@ -49,7 +49,7 @@ export const About: React.FC = () => {
   };
 
   const text =
-    'Vi är två utvecklare med olika bakgrund inom utveckling och tech som tillsammans med dig vill skapa smarta weblösningar för ditt företag. Vi vill hjäla dig att digitalisera ditt företag och hålla ditt företag i framkant med dagens teknologi.';
+    'Vi är två utvecklare med olika bakgrund inom utveckling och tech som tillsammans med dig vill skapa smarta webblösningar för ditt företag. Vi vill hjälpa dig att digitalisera ditt företag och hålla ditt företag i framkant med dagens teknologi.';
 
   const controls = useAnimation();
   const ref = React.useRef(null);
