@@ -25,6 +25,10 @@ export const PopupCard = styled.div`
   padding: 20px;
   transform: translateY(-50%);
   pointer-events: auto;
+
+  @media (max-width: 768px) {
+    bottom: -50px;
+  }
 `;
 export const Overlay = styled.div`
   position: fixed;
